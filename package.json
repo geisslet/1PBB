@@ -1,0 +1,22 @@
+{
+  "name": "git",
+  "version": "1.0.0",
+  "description": "one person business billing",
+  "main": "opbb-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geisslet/1PBB.git"
+  },
+  "author": "geisslet",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/geisslet/1PBB/issues"
+  },
+  "homepage": "https://github.com/geisslet/1PBB#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}

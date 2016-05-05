@@ -1,0 +1,508 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', '-g', 'csv' ]
+2 info using npm@3.8.6
+3 info using node@v5.11.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData csv
+8 silly fetchNamedPackageData csv
+9 silly mapToRegistry name csv
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'csv',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   name: 'csv',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/csv
+14 verbose request uri https://registry.npmjs.org/csv
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 8:52:32 PM
+17 verbose request id f11605144c77921f
+18 verbose etag "89GZ724WM8WNIXDQ9NP3UYTWK"
+19 http request GET https://registry.npmjs.org/csv
+20 http 304 https://registry.npmjs.org/csv
+21 verbose headers { date: 'Thu, 05 May 2016 18:52:32 GMT',
+21 verbose headers   via: '1.1 varnish',
+21 verbose headers   'cache-control': 'max-age=300',
+21 verbose headers   etag: '"89GZ724WM8WNIXDQ9NP3UYTWK"',
+21 verbose headers   age: '0',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'x-served-by': 'cache-fra1224-FRA',
+21 verbose headers   'x-cache': 'HIT',
+21 verbose headers   'x-cache-hits': '1',
+21 verbose headers   'x-timer': 'S1462474352.525063,VS0,VE421',
+21 verbose headers   vary: 'Accept-Encoding' }
+22 silly get cb [ 304,
+22 silly get   { date: 'Thu, 05 May 2016 18:52:32 GMT',
+22 silly get     via: '1.1 varnish',
+22 silly get     'cache-control': 'max-age=300',
+22 silly get     etag: '"89GZ724WM8WNIXDQ9NP3UYTWK"',
+22 silly get     age: '0',
+22 silly get     connection: 'keep-alive',
+22 silly get     'x-served-by': 'cache-fra1224-FRA',
+22 silly get     'x-cache': 'HIT',
+22 silly get     'x-cache-hits': '1',
+22 silly get     'x-timer': 'S1462474352.525063,VS0,VE421',
+22 silly get     vary: 'Accept-Encoding' } ]
+23 verbose etag https://registry.npmjs.org/csv from cache
+24 verbose get saving csv to /home/geisslet/.npm/registry.npmjs.org/csv/.cache.json
+25 verbose correctMkdir /home/geisslet/.npm correctMkdir not in flight; initializing
+26 silly install normalizeTree
+27 silly loadCurrentTree Finishing
+28 silly loadIdealTree Starting
+29 silly install loadIdealTree
+30 silly cloneCurrentTree Starting
+31 silly install cloneCurrentTreeToIdealTree
+32 silly cloneCurrentTree Finishing
+33 silly loadShrinkwrap Starting
+34 silly install loadShrinkwrap
+35 silly loadShrinkwrap Finishing
+36 silly loadAllDepsIntoIdealTree Starting
+37 silly install loadAllDepsIntoIdealTree
+38 silly resolveWithNewModule csv@0.4.6 checking installable status
+39 silly cache add args [ 'csv', null ]
+40 verbose cache add spec csv
+41 silly cache add parsed spec Result {
+41 silly cache add   raw: 'csv',
+41 silly cache add   scope: null,
+41 silly cache add   name: 'csv',
+41 silly cache add   rawSpec: '',
+41 silly cache add   spec: 'latest',
+41 silly cache add   type: 'tag' }
+42 silly addNamed csv@latest
+43 verbose addNamed "latest" is being treated as a dist-tag for csv
+44 info addNameTag [ 'csv', 'latest' ]
+45 silly mapToRegistry name csv
+46 silly mapToRegistry using default registry
+47 silly mapToRegistry registry https://registry.npmjs.org/
+48 silly mapToRegistry data Result {
+48 silly mapToRegistry   raw: 'csv',
+48 silly mapToRegistry   scope: null,
+48 silly mapToRegistry   name: 'csv',
+48 silly mapToRegistry   rawSpec: '',
+48 silly mapToRegistry   spec: 'latest',
+48 silly mapToRegistry   type: 'tag' }
+49 silly mapToRegistry uri https://registry.npmjs.org/csv
+50 verbose addNameTag registry:https://registry.npmjs.org/csv not in flight; fetching
+51 verbose get https://registry.npmjs.org/csv not expired, no request
+52 silly addNameTag next cb for csv with tag latest
+53 silly addNamed csv@0.4.6
+54 verbose addNamed "0.4.6" is a plain semver version for csv
+55 silly cache afterAdd csv@0.4.6
+56 verbose afterAdd /home/geisslet/.npm/csv/0.4.6/package/package.json not in flight; writing
+57 verbose correctMkdir /home/geisslet/.npm correctMkdir not in flight; initializing
+58 verbose afterAdd /home/geisslet/.npm/csv/0.4.6/package/package.json written
+59 silly fetchNamedPackageData csv-generate
+60 silly mapToRegistry name csv-generate
+61 silly mapToRegistry using default registry
+62 silly mapToRegistry registry https://registry.npmjs.org/
+63 silly mapToRegistry data Result {
+63 silly mapToRegistry   raw: 'csv-generate',
+63 silly mapToRegistry   scope: null,
+63 silly mapToRegistry   name: 'csv-generate',
+63 silly mapToRegistry   rawSpec: '',
+63 silly mapToRegistry   spec: 'latest',
+63 silly mapToRegistry   type: 'tag' }
+64 silly mapToRegistry uri https://registry.npmjs.org/csv-generate
+65 silly fetchNamedPackageData csv-parse
+66 silly mapToRegistry name csv-parse
+67 silly mapToRegistry using default registry
+68 silly mapToRegistry registry https://registry.npmjs.org/
+69 silly mapToRegistry data Result {
+69 silly mapToRegistry   raw: 'csv-parse',
+69 silly mapToRegistry   scope: null,
+69 silly mapToRegistry   name: 'csv-parse',
+69 silly mapToRegistry   rawSpec: '',
+69 silly mapToRegistry   spec: 'latest',
+69 silly mapToRegistry   type: 'tag' }
+70 silly mapToRegistry uri https://registry.npmjs.org/csv-parse
+71 silly fetchNamedPackageData stream-transform
+72 silly mapToRegistry name stream-transform
+73 silly mapToRegistry using default registry
+74 silly mapToRegistry registry https://registry.npmjs.org/
+75 silly mapToRegistry data Result {
+75 silly mapToRegistry   raw: 'stream-transform',
+75 silly mapToRegistry   scope: null,
+75 silly mapToRegistry   name: 'stream-transform',
+75 silly mapToRegistry   rawSpec: '',
+75 silly mapToRegistry   spec: 'latest',
+75 silly mapToRegistry   type: 'tag' }
+76 silly mapToRegistry uri https://registry.npmjs.org/stream-transform
+77 silly fetchNamedPackageData csv-stringify
+78 silly mapToRegistry name csv-stringify
+79 silly mapToRegistry using default registry
+80 silly mapToRegistry registry https://registry.npmjs.org/
+81 silly mapToRegistry data Result {
+81 silly mapToRegistry   raw: 'csv-stringify',
+81 silly mapToRegistry   scope: null,
+81 silly mapToRegistry   name: 'csv-stringify',
+81 silly mapToRegistry   rawSpec: '',
+81 silly mapToRegistry   spec: 'latest',
+81 silly mapToRegistry   type: 'tag' }
+82 silly mapToRegistry uri https://registry.npmjs.org/csv-stringify
+83 verbose request uri https://registry.npmjs.org/csv-generate
+84 verbose request no auth needed
+85 info attempt registry request try #1 at 8:52:33 PM
+86 verbose etag "4H5943DTJMTSOXF9VHQMD15KZ"
+87 http request GET https://registry.npmjs.org/csv-generate
+88 verbose request uri https://registry.npmjs.org/csv-parse
+89 verbose request no auth needed
+90 info attempt registry request try #1 at 8:52:33 PM
+91 verbose etag "8W0AXC2NFQD5DW4DWLGB6UP5Z"
+92 http request GET https://registry.npmjs.org/csv-parse
+93 verbose request uri https://registry.npmjs.org/stream-transform
+94 verbose request no auth needed
+95 info attempt registry request try #1 at 8:52:33 PM
+96 verbose etag "9Q3U7W95FETOMD8GYJ0YOAU0I"
+97 http request GET https://registry.npmjs.org/stream-transform
+98 verbose request uri https://registry.npmjs.org/csv-stringify
+99 verbose request no auth needed
+100 info attempt registry request try #1 at 8:52:33 PM
+101 verbose etag "DS00FADTDRRE8Q6HEYM39RWTG"
+102 http request GET https://registry.npmjs.org/csv-stringify
+103 http 304 https://registry.npmjs.org/csv-generate
+104 verbose headers { date: 'Thu, 05 May 2016 18:52:33 GMT',
+104 verbose headers   via: '1.1 varnish',
+104 verbose headers   'cache-control': 'max-age=300',
+104 verbose headers   etag: '"4H5943DTJMTSOXF9VHQMD15KZ"',
+104 verbose headers   age: '241',
+104 verbose headers   connection: 'keep-alive',
+104 verbose headers   'x-served-by': 'cache-fra1224-FRA',
+104 verbose headers   'x-cache': 'HIT',
+104 verbose headers   'x-cache-hits': '1',
+104 verbose headers   'x-timer': 'S1462474353.252145,VS0,VE0',
+104 verbose headers   vary: 'Accept-Encoding' }
+105 silly get cb [ 304,
+105 silly get   { date: 'Thu, 05 May 2016 18:52:33 GMT',
+105 silly get     via: '1.1 varnish',
+105 silly get     'cache-control': 'max-age=300',
+105 silly get     etag: '"4H5943DTJMTSOXF9VHQMD15KZ"',
+105 silly get     age: '241',
+105 silly get     connection: 'keep-alive',
+105 silly get     'x-served-by': 'cache-fra1224-FRA',
+105 silly get     'x-cache': 'HIT',
+105 silly get     'x-cache-hits': '1',
+105 silly get     'x-timer': 'S1462474353.252145,VS0,VE0',
+105 silly get     vary: 'Accept-Encoding' } ]
+106 verbose etag https://registry.npmjs.org/csv-generate from cache
+107 verbose get saving csv-generate to /home/geisslet/.npm/registry.npmjs.org/csv-generate/.cache.json
+108 verbose correctMkdir /home/geisslet/.npm correctMkdir not in flight; initializing
+109 silly resolveWithNewModule csv-generate@0.0.6 checking installable status
+110 silly cache add args [ 'csv-generate@^0.0.6', null ]
+111 verbose cache add spec csv-generate@^0.0.6
+112 silly cache add parsed spec Result {
+112 silly cache add   raw: 'csv-generate@^0.0.6',
+112 silly cache add   scope: null,
+112 silly cache add   name: 'csv-generate',
+112 silly cache add   rawSpec: '^0.0.6',
+112 silly cache add   spec: '>=0.0.6 <0.0.7',
+112 silly cache add   type: 'range' }
+113 silly addNamed csv-generate@>=0.0.6 <0.0.7
+114 verbose addNamed ">=0.0.6 <0.0.7" is a valid semver range for csv-generate
+115 silly addNameRange { name: 'csv-generate', range: '>=0.0.6 <0.0.7', hasData: false }
+116 silly mapToRegistry name csv-generate
+117 silly mapToRegistry using default registry
+118 silly mapToRegistry registry https://registry.npmjs.org/
+119 silly mapToRegistry data Result {
+119 silly mapToRegistry   raw: 'csv-generate',
+119 silly mapToRegistry   scope: null,
+119 silly mapToRegistry   name: 'csv-generate',
+119 silly mapToRegistry   rawSpec: '',
+119 silly mapToRegistry   spec: 'latest',
+119 silly mapToRegistry   type: 'tag' }
+120 silly mapToRegistry uri https://registry.npmjs.org/csv-generate
+121 verbose addNameRange registry:https://registry.npmjs.org/csv-generate not in flight; fetching
+122 verbose get https://registry.npmjs.org/csv-generate not expired, no request
+123 silly addNameRange number 2 { name: 'csv-generate', range: '>=0.0.6 <0.0.7', hasData: true }
+124 silly addNameRange versions [ 'csv-generate',
+124 silly addNameRange   [ '0.0.0',
+124 silly addNameRange     '0.0.1',
+124 silly addNameRange     '0.0.2',
+124 silly addNameRange     '0.0.3',
+124 silly addNameRange     '0.0.4',
+124 silly addNameRange     '0.0.5',
+124 silly addNameRange     '0.0.6',
+124 silly addNameRange     '1.0.0' ] ]
+125 silly addNamed csv-generate@0.0.6
+126 verbose addNamed "0.0.6" is a plain semver version for csv-generate
+127 silly cache afterAdd csv-generate@0.0.6
+128 verbose afterAdd /home/geisslet/.npm/csv-generate/0.0.6/package/package.json not in flight; writing
+129 verbose correctMkdir /home/geisslet/.npm correctMkdir not in flight; initializing
+130 verbose afterAdd /home/geisslet/.npm/csv-generate/0.0.6/package/package.json written
+131 http 304 https://registry.npmjs.org/csv-parse
+132 verbose headers { date: 'Thu, 05 May 2016 18:52:33 GMT',
+132 verbose headers   via: '1.1 varnish',
+132 verbose headers   'cache-control': 'max-age=300',
+132 verbose headers   etag: '"8W0AXC2NFQD5DW4DWLGB6UP5Z"',
+132 verbose headers   age: '241',
+132 verbose headers   connection: 'keep-alive',
+132 verbose headers   'x-served-by': 'cache-fra1241-FRA',
+132 verbose headers   'x-cache': 'HIT',
+132 verbose headers   'x-cache-hits': '1',
+132 verbose headers   'x-timer': 'S1462474353.328831,VS0,VE0',
+132 verbose headers   vary: 'Accept-Encoding' }
+133 silly get cb [ 304,
+133 silly get   { date: 'Thu, 05 May 2016 18:52:33 GMT',
+133 silly get     via: '1.1 varnish',
+133 silly get     'cache-control': 'max-age=300',
+133 silly get     etag: '"8W0AXC2NFQD5DW4DWLGB6UP5Z"',
+133 silly get     age: '241',
+133 silly get     connection: 'keep-alive',
+133 silly get     'x-served-by': 'cache-fra1241-FRA',
+133 silly get     'x-cache': 'HIT',
+133 silly get     'x-cache-hits': '1',
+133 silly get     'x-timer': 'S1462474353.328831,VS0,VE0',
+133 silly get     vary: 'Accept-Encoding' } ]
+134 verbose etag https://registry.npmjs.org/csv-parse from cache
+135 verbose get saving csv-parse to /home/geisslet/.npm/registry.npmjs.org/csv-parse/.cache.json
+136 verbose correctMkdir /home/geisslet/.npm correctMkdir not in flight; initializing
+137 http 304 https://registry.npmjs.org/csv-stringify
+138 verbose headers { date: 'Thu, 05 May 2016 18:52:33 GMT',
+138 verbose headers   via: '1.1 varnish',
+138 verbose headers   'cache-control': 'max-age=300',
+138 verbose headers   etag: '"DS00FADTDRRE8Q6HEYM39RWTG"',
+138 verbose headers   age: '241',
+138 verbose headers   connection: 'keep-alive',
+138 verbose headers   'x-served-by': 'cache-fra1235-FRA',
+138 verbose headers   'x-cache': 'HIT',
+138 verbose headers   'x-cache-hits': '1',
+138 verbose headers   'x-timer': 'S1462474353.330535,VS0,VE0',
+138 verbose headers   vary: 'Accept-Encoding' }
+139 silly get cb [ 304,
+139 silly get   { date: 'Thu, 05 May 2016 18:52:33 GMT',
+139 silly get     via: '1.1 varnish',
+139 silly get     'cache-control': 'max-age=300',
+139 silly get     etag: '"DS00FADTDRRE8Q6HEYM39RWTG"',
+139 silly get     age: '241',
+139 silly get     connection: 'keep-alive',
+139 silly get     'x-served-by': 'cache-fra1235-FRA',
+139 silly get     'x-cache': 'HIT',
+139 silly get     'x-cache-hits': '1',
+139 silly get     'x-timer': 'S1462474353.330535,VS0,VE0',
+139 silly get     vary: 'Accept-Encoding' } ]
+140 verbose etag https://registry.npmjs.org/csv-stringify from cache
+141 verbose get saving csv-stringify to /home/geisslet/.npm/registry.npmjs.org/csv-stringify/.cache.json
+142 verbose correctMkdir /home/geisslet/.npm correctMkdir not in flight; initializing
+143 http 304 https://registry.npmjs.org/stream-transform
+144 verbose headers { date: 'Thu, 05 May 2016 18:52:33 GMT',
+144 verbose headers   via: '1.1 varnish',
+144 verbose headers   'cache-control': 'max-age=300',
+144 verbose headers   etag: '"9Q3U7W95FETOMD8GYJ0YOAU0I"',
+144 verbose headers   age: '241',
+144 verbose headers   connection: 'keep-alive',
+144 verbose headers   'x-served-by': 'cache-fra1235-FRA',
+144 verbose headers   'x-cache': 'HIT',
+144 verbose headers   'x-cache-hits': '1',
+144 verbose headers   'x-timer': 'S1462474353.331754,VS0,VE0',
+144 verbose headers   vary: 'Accept-Encoding' }
+145 silly get cb [ 304,
+145 silly get   { date: 'Thu, 05 May 2016 18:52:33 GMT',
+145 silly get     via: '1.1 varnish',
+145 silly get     'cache-control': 'max-age=300',
+145 silly get     etag: '"9Q3U7W95FETOMD8GYJ0YOAU0I"',
+145 silly get     age: '241',
+145 silly get     connection: 'keep-alive',
+145 silly get     'x-served-by': 'cache-fra1235-FRA',
+145 silly get     'x-cache': 'HIT',
+145 silly get     'x-cache-hits': '1',
+145 silly get     'x-timer': 'S1462474353.331754,VS0,VE0',
+145 silly get     vary: 'Accept-Encoding' } ]
+146 verbose etag https://registry.npmjs.org/stream-transform from cache
+147 verbose get saving stream-transform to /home/geisslet/.npm/registry.npmjs.org/stream-transform/.cache.json
+148 verbose correctMkdir /home/geisslet/.npm correctMkdir not in flight; initializing
+149 silly resolveWithNewModule csv-parse@1.1.0 checking installable status
+150 silly cache add args [ 'csv-parse@^1.0.0', null ]
+151 verbose cache add spec csv-parse@^1.0.0
+152 silly cache add parsed spec Result {
+152 silly cache add   raw: 'csv-parse@^1.0.0',
+152 silly cache add   scope: null,
+152 silly cache add   name: 'csv-parse',
+152 silly cache add   rawSpec: '^1.0.0',
+152 silly cache add   spec: '>=1.0.0 <2.0.0',
+152 silly cache add   type: 'range' }
+153 silly addNamed csv-parse@>=1.0.0 <2.0.0
+154 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for csv-parse
+155 silly addNameRange { name: 'csv-parse', range: '>=1.0.0 <2.0.0', hasData: false }
+156 silly mapToRegistry name csv-parse
+157 silly mapToRegistry using default registry
+158 silly mapToRegistry registry https://registry.npmjs.org/
+159 silly mapToRegistry data Result {
+159 silly mapToRegistry   raw: 'csv-parse',
+159 silly mapToRegistry   scope: null,
+159 silly mapToRegistry   name: 'csv-parse',
+159 silly mapToRegistry   rawSpec: '',
+159 silly mapToRegistry   spec: 'latest',
+159 silly mapToRegistry   type: 'tag' }
+160 silly mapToRegistry uri https://registry.npmjs.org/csv-parse
+161 verbose addNameRange registry:https://registry.npmjs.org/csv-parse not in flight; fetching
+162 silly resolveWithNewModule csv-stringify@0.0.8 checking installable status
+163 silly cache add args [ 'csv-stringify@^0.0.8', null ]
+164 verbose cache add spec csv-stringify@^0.0.8
+165 silly cache add parsed spec Result {
+165 silly cache add   raw: 'csv-stringify@^0.0.8',
+165 silly cache add   scope: null,
+165 silly cache add   name: 'csv-stringify',
+165 silly cache add   rawSpec: '^0.0.8',
+165 silly cache add   spec: '>=0.0.8 <0.0.9',
+165 silly cache add   type: 'range' }
+166 silly addNamed csv-stringify@>=0.0.8 <0.0.9
+167 verbose addNamed ">=0.0.8 <0.0.9" is a valid semver range for csv-stringify
+168 silly addNameRange { name: 'csv-stringify',
+168 silly addNameRange   range: '>=0.0.8 <0.0.9',
+168 silly addNameRange   hasData: false }
+169 silly mapToRegistry name csv-stringify
+170 silly mapToRegistry using default registry
+171 silly mapToRegistry registry https://registry.npmjs.org/
+172 silly mapToRegistry data Result {
+172 silly mapToRegistry   raw: 'csv-stringify',
+172 silly mapToRegistry   scope: null,
+172 silly mapToRegistry   name: 'csv-stringify',
+172 silly mapToRegistry   rawSpec: '',
+172 silly mapToRegistry   spec: 'latest',
+172 silly mapToRegistry   type: 'tag' }
+173 silly mapToRegistry uri https://registry.npmjs.org/csv-stringify
+174 verbose addNameRange registry:https://registry.npmjs.org/csv-stringify not in flight; fetching
+175 silly resolveWithNewModule stream-transform@0.1.1 checking installable status
+176 silly cache add args [ 'stream-transform@^0.1.0', null ]
+177 verbose cache add spec stream-transform@^0.1.0
+178 silly cache add parsed spec Result {
+178 silly cache add   raw: 'stream-transform@^0.1.0',
+178 silly cache add   scope: null,
+178 silly cache add   name: 'stream-transform',
+178 silly cache add   rawSpec: '^0.1.0',
+178 silly cache add   spec: '>=0.1.0 <0.2.0',
+178 silly cache add   type: 'range' }
+179 silly addNamed stream-transform@>=0.1.0 <0.2.0
+180 verbose addNamed ">=0.1.0 <0.2.0" is a valid semver range for stream-transform
+181 silly addNameRange { name: 'stream-transform',
+181 silly addNameRange   range: '>=0.1.0 <0.2.0',
+181 silly addNameRange   hasData: false }
+182 silly mapToRegistry name stream-transform
+183 silly mapToRegistry using default registry
+184 silly mapToRegistry registry https://registry.npmjs.org/
+185 silly mapToRegistry data Result {
+185 silly mapToRegistry   raw: 'stream-transform',
+185 silly mapToRegistry   scope: null,
+185 silly mapToRegistry   name: 'stream-transform',
+185 silly mapToRegistry   rawSpec: '',
+185 silly mapToRegistry   spec: 'latest',
+185 silly mapToRegistry   type: 'tag' }
+186 silly mapToRegistry uri https://registry.npmjs.org/stream-transform
+187 verbose addNameRange registry:https://registry.npmjs.org/stream-transform not in flight; fetching
+188 verbose get https://registry.npmjs.org/csv-parse not expired, no request
+189 silly addNameRange number 2 { name: 'csv-parse', range: '>=1.0.0 <2.0.0', hasData: true }
+190 silly addNameRange versions [ 'csv-parse',
+190 silly addNameRange   [ '0.0.0',
+190 silly addNameRange     '0.0.1',
+190 silly addNameRange     '0.0.2',
+190 silly addNameRange     '0.0.3',
+190 silly addNameRange     '0.0.4',
+190 silly addNameRange     '0.0.5',
+190 silly addNameRange     '0.0.6',
+190 silly addNameRange     '0.0.8',
+190 silly addNameRange     '0.0.9',
+190 silly addNameRange     '0.1.0',
+190 silly addNameRange     '0.1.1',
+190 silly addNameRange     '0.1.2',
+190 silly addNameRange     '0.1.3',
+190 silly addNameRange     '0.1.4',
+190 silly addNameRange     '1.0.0',
+190 silly addNameRange     '1.0.1',
+190 silly addNameRange     '1.0.2',
+190 silly addNameRange     '1.0.3',
+190 silly addNameRange     '1.0.4',
+190 silly addNameRange     '1.0.5',
+190 silly addNameRange     '1.0.6',
+190 silly addNameRange     '1.1.0' ] ]
+191 silly addNamed csv-parse@1.1.0
+192 verbose addNamed "1.1.0" is a plain semver version for csv-parse
+193 verbose get https://registry.npmjs.org/csv-stringify not expired, no request
+194 silly addNameRange number 2 { name: 'csv-stringify', range: '>=0.0.8 <0.0.9', hasData: true }
+195 silly addNameRange versions [ 'csv-stringify',
+195 silly addNameRange   [ '0.0.0',
+195 silly addNameRange     '0.0.1',
+195 silly addNameRange     '0.0.2',
+195 silly addNameRange     '0.0.3',
+195 silly addNameRange     '0.0.4',
+195 silly addNameRange     '0.0.5',
+195 silly addNameRange     '0.0.6',
+195 silly addNameRange     '0.0.7',
+195 silly addNameRange     '0.0.8',
+195 silly addNameRange     '1.0.1',
+195 silly addNameRange     '1.0.2' ] ]
+196 silly addNamed csv-stringify@0.0.8
+197 verbose addNamed "0.0.8" is a plain semver version for csv-stringify
+198 verbose get https://registry.npmjs.org/stream-transform not expired, no request
+199 silly addNameRange number 2 { name: 'stream-transform',
+199 silly addNameRange   range: '>=0.1.0 <0.2.0',
+199 silly addNameRange   hasData: true }
+200 silly addNameRange versions [ 'stream-transform',
+200 silly addNameRange   [ '0.0.2',
+200 silly addNameRange     '0.0.4',
+200 silly addNameRange     '0.0.6',
+200 silly addNameRange     '0.0.7',
+200 silly addNameRange     '0.0.8',
+200 silly addNameRange     '0.0.9',
+200 silly addNameRange     '0.1.0',
+200 silly addNameRange     '0.1.1' ] ]
+201 silly addNamed stream-transform@0.1.1
+202 verbose addNamed "0.1.1" is a plain semver version for stream-transform
+203 silly cache afterAdd csv-parse@1.1.0
+204 verbose afterAdd /home/geisslet/.npm/csv-parse/1.1.0/package/package.json not in flight; writing
+205 verbose correctMkdir /home/geisslet/.npm correctMkdir not in flight; initializing
+206 silly cache afterAdd csv-stringify@0.0.8
+207 verbose afterAdd /home/geisslet/.npm/csv-stringify/0.0.8/package/package.json not in flight; writing
+208 verbose correctMkdir /home/geisslet/.npm correctMkdir not in flight; initializing
+209 silly cache afterAdd stream-transform@0.1.1
+210 verbose afterAdd /home/geisslet/.npm/stream-transform/0.1.1/package/package.json not in flight; writing
+211 verbose correctMkdir /home/geisslet/.npm correctMkdir not in flight; initializing
+212 verbose afterAdd /home/geisslet/.npm/csv-parse/1.1.0/package/package.json written
+213 verbose afterAdd /home/geisslet/.npm/csv-stringify/0.0.8/package/package.json written
+214 verbose afterAdd /home/geisslet/.npm/stream-transform/0.1.1/package/package.json written
+215 silly loadAllDepsIntoIdealTree Finishing
+216 silly idealTree:prePrune lib
+216 silly idealTree:prePrune └─┬ csv@0.4.6
+216 silly idealTree:prePrune   ├── csv-generate@0.0.6
+216 silly idealTree:prePrune   ├── csv-parse@1.1.0
+216 silly idealTree:prePrune   ├── csv-stringify@0.0.8
+216 silly idealTree:prePrune   └── stream-transform@0.1.1
+217 silly loadIdealTree Finishing
+218 silly currentTree lib
+219 silly idealTree lib
+219 silly idealTree └─┬ csv@0.4.6
+219 silly idealTree   ├── csv-generate@0.0.6
+219 silly idealTree   ├── csv-parse@1.1.0
+219 silly idealTree   ├── csv-stringify@0.0.8
+219 silly idealTree   └── stream-transform@0.1.1
+220 silly generateActionsToTake Starting
+221 silly install generateActionsToTake
+222 warn checkPermissions Missing write access to /usr/lib/node_modules
+223 silly rollbackFailedOptional Starting
+224 silly rollbackFailedOptional Finishing
+225 silly runTopLevelLifecycles Starting
+226 silly runTopLevelLifecycles Finishing
+227 silly install printInstalled
+228 verbose stack Error: EACCES: permission denied, access '/usr/lib/node_modules'
+228 verbose stack     at Error (native)
+229 verbose cwd /home/geisslet/git/1pbb
+230 error Linux 4.4.0-21-generic
+231 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "-g" "csv"
+232 error node v5.11.0
+233 error npm  v3.8.6
+234 error path /usr/lib/node_modules
+235 error code EACCES
+236 error errno -13
+237 error syscall access
+238 error Error: EACCES: permission denied, access '/usr/lib/node_modules'
+238 error     at Error (native)
+238 error  { [Error: EACCES: permission denied, access '/usr/lib/node_modules']
+238 error   errno: -13,
+238 error   code: 'EACCES',
+238 error   syscall: 'access',
+238 error   path: '/usr/lib/node_modules' }
+239 error Please try running this command again as root/Administrator.
+240 verbose exit [ -13, true ]
