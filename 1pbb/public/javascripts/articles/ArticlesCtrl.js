@@ -1,4 +1,11 @@
-<div ng-controller="ArticlesCtrl as vm">
+angular
+	.module('opbb')
+	.controller('ArticlesCtrl', ArticlesCtrl);
 
 
-</div>
+ArticlesCtrl.$inject = ['$log'];
+function ArticlesCtrl ($log){
+
+	var vm = this;
+
+}

@@ -1,5 +1,5 @@
 var opbb = angular
-	.module('opbb', ['ngRoute','pascalprecht.translate'])
+	.module('opbb', ['ngRoute','pascalprecht.translate','mgcrea.ngStrap'])
 	.controller('mainCtrl', mainCtrl)
 	.config(route);
 
@@ -15,32 +15,26 @@ function mainCtrl($log){
 
 function route($routeProvider){
 
-    console.log('quappe.app.viewhandling called');
-
     $routeProvider
-        .when('/browse',{
-            templateUrl: 'features/quappe.browse.html',
-            name: 'browse'
+        .when('/articles',{
+            templateUrl: 'javascripts/articles/ArticlesPartial.html',
         })
-        .when('/hello',{
-            templateUrl: 'features/quappe.hello.html'
+        .when('/customers',{
+            templateUrl: 'javascripts/customers/CustomersPartial.html'
         })
-        .when('/my',{
-            templateUrl: 'features/quappe.my.html',
+        .when('/bills',{
+            templateUrl: 'javascripts/bills/BillsPartial.html',
         })
-        .when('/signin',{
-            templateUrl: 'features/quappe.sign-in.html',
+        .when('/offers',{
+            templateUrl: 'javascripts/offers/OffersPartial.html',
         })
-        .when('/signup',{
-            templateUrl: 'features/quappe.sign-up.html',
+        .when('/statistics',{
+            templateUrl: 'javascripts/statistics/StatisticsPartial.html',
         })
-        .when('/post',{
-            templateUrl: 'features/quappe.statement.post.html',
-        })
-        .when('/detail',{
-            templateUrl: 'features/quappe.statement.detail.html',
+        .when('/print',{
+            templateUrl: 'javascripts/quappe.statement.detail.html',
         })
         .otherwise({
-            redirectTo: 'features/quappe.hello.html'
+            templateUrl: 'javascripts/home/HomePartial.html'
         });
 }
