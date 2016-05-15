@@ -6,6 +6,8 @@ angular
 ArticlesCtrl.$inject = ['$log','$http'];
 function ArticlesCtrl ($log,$http){
 
+	$log.debug('ArticlesCtrl init');
+
 	var vm = this;
 
 	vm.items = [];
@@ -13,20 +15,22 @@ function ArticlesCtrl ($log,$http){
 
 	vm.gridOptions = {};
 
-	vm.activate = function activate(){
+	vm.activate = function fActivate(){
 		$log.debug('ArticlesCtrl.activate called');
 
 		var method = 'GET';
-		var url = 'localhost:3000/article';
+		var url = 'http://localhost:3000/article';
 
 		$http({method: method, url: url})
-			.then(function(response) {
-			  vm.status = response.status;
-			  vm.items = response.data;
+			.then(function success(response) {
+				$log.debug('ArticlesCtrl.activate.getArticle success');
+				vm.status = response.status;
+				vm.items = response.data;
 
-			  vm.gridOptions.data = vm.items;
+				vm.gridOptions.data = vm.items;
 
-			}, function(response) {
+			}, function fail(response) {
+				$log.debug('ArticlesCtrl.activate.getArticle fail');
 			  vm.items = response.data || "Request failed";
 			  vm.status = response.status;
 			});

@@ -11,19 +11,30 @@ var article = require('./routes/article');
 var app = express();
 
 // view engine setup
-/*app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
-*/
+
+//app.set('view engine', 'html');
 app.use(favicon());
+//app.use(express.favicon(__dirname + '/public/images/favicon.ico'));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+//app.use(compression());
 
 app.use('/', routes);
 app.use('/users', users);
 app.use('/article', article);
+
+/// log the client IP
+app.use(function (req, res, next) {
+  var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+  console.log('Client IP:', ip);
+  next();
+});
+
 
 /// catch 404 and forwarding to error handler
 app.use(function(req, res, next) {

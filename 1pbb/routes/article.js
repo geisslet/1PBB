@@ -68,6 +68,7 @@ router.delete('/user', function (req, res) {
   res.send('Got a DELETE request at /user');
 });
 
+/*
 
 csv.generate({seed: 1, columns: 2, length: 20}, function(err, data){
   csv.parse(data, function(err, data){
@@ -80,6 +81,6 @@ csv.generate({seed: 1, columns: 2, length: 20}, function(err, data){
     });
   });
 });
-
+*/
 
 module.exports = router;

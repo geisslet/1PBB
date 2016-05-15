@@ -10,11 +10,10 @@ function mainCtrl($log){
 
 	var vm = this;
 
-
 }
 
-function route($routeProvider, $locationProvider){
-    $locationProvider.html5Mode(true);
+function route($routeProvider){
+    //$locationProvider.html5Mode(true);
 
     $routeProvider
         .when('/articles',{
@@ -33,7 +32,10 @@ function route($routeProvider, $locationProvider){
             templateUrl: 'javascripts/statistics/StatisticsPartial.html',
         })
         .when('/print',{
-            templateUrl: 'javascripts/quappe.statement.detail.html',
+            templateUrl: 'javascripts/',
+        })
+        .when('/home',{
+            templateUrl: 'javascripts/home/HomePartial.html',
         })
         .otherwise({
             templateUrl: 'javascripts/home/HomePartial.html'

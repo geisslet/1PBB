@@ -1,0 +1,30 @@
+doctype html
+html(ng-app='opbb' lang="en")
+  head
+    title='OPBB'
+
+    // 3rd party stuff to make it nice
+    script(src='/bower_components/angular/angular.min.js')
+    script(src='/bower_components/angular-route/angular-route.min.js')
+    script(src='/bower_components/angular-strap/dist/angular-strap.min.js')
+    script(src='/bower_components/angular-strap/dist/angular-strap.tpl.min.js')
+    script(src='/bower_components/angular-ui-grid/ui-grid.min.js')
+    script(src='/bower_components/ng-dialog/js/ngDialog.min.js')
+    script(src='/bower_components/angular-translate/angular-translate.min.js')
+
+    // controller and co
+    script(src='/javascripts/opbb-app.js')
+    script(src='/javascripts/opbb-config.js')
+    script(src='/javascripts/articles/ArticlesCtrl.js')
+
+
+    link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/bower_components/font-awesome/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/bower_components/ng-dialog/css/ngDialog.min.css')
+    link(rel='stylesheet', href='/bower_components/ng-dialog/css/ngDialog-theme-default.min.css')
+    link(rel='stylesheet', href='/bower_components/angular-ui-grid/ui-grid.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+
+  body
+    block content
+      div(ng-view)
