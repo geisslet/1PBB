@@ -1,14 +1,56 @@
 var express = require('express');
-var csv = require('csv');
 var router = express.Router();
+
+/*var loggly = require('loggly');
+
+var client = loggly.createClient({
+    token: 'opbb',
+    subdomain: 'articleHandler'
+});*/
+
+var csv = require('csv');
+var fs = require('fs');
+//
+
+var content = [];
+var parser = csv.parse({columns: true, delimiter: ';'}, function(err, data){
+  console.log(data);
+  content.push(data);
+});
 
 
 /* GET users listing. */
 router.get('/', function(req, res) {
-  res.send('respond  seconde with a resource');
+  process.stdout.write('get.article: ' + req);  
+
+  console.log('console.test wa');
+
+  //client.log('get.article: ' + JSON.stringify(req)); 
+
+
+  fs.readFile(__dirname+'/../data/products.csv', (err, data) => {
+    if (err) throw err;
+    //console.log(data);
+
+    csv.parse(data, {columns: true, delimiter: ';'}, (err, data)=>{
+      //content = data;
+        res.send(data);
+
+    });
+  });
+
+
+  //fs.createReadStream(__dirname+'/../data/products.csv').pipe(parser);
+
+  //res.send({});
+
+
+ // res.send('respond seconde with a resource - hä? warum sehe ich nichts anders');
+
+
 });
 
-router.get('/user', function (req, res) {
+router.get('/article', function (req, res) {
   res.send('Hello World!');
 });
 

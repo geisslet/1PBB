@@ -3,4 +3,10 @@
 	<h1>{{ 'ARTICLES' | translate }} </h1>
 	{{'BILLS' | translate}}
 
+	<!-- overview -->
+	<div ui-grid="gridOptions" ui-grid-edit class="grid"></div>
+	
+	<!-- details -->
+	<div ng-model="item"></div>
+
 </div>

@@ -3,6 +3,7 @@ angular.module('opbb')
 
 languageConfig.$inject = ['$translateProvider'];
 function languageConfig($translateProvider){
+
   
   // deutsche Sprache
   $translateProvider.translations('de_DE', {
@@ -35,5 +36,6 @@ function languageConfig($translateProvider){
   //sanitize
   $translateProvider.useSanitizeValueStrategy('escape');
   $translateProvider.preferredLanguage('de_DE');
+
   //$translateProvider.determinePreferredLanguage();
 }

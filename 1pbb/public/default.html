@@ -2,12 +2,14 @@
 <html lang="en">
   <head>
     <title>OPBB</title>
+    <base href="/">
 
     <!-- styles -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="bower_components/ng-dialog/css/ngDialog.min.css">
     <link rel="stylesheet" href="bower_components/ng-dialog/css/ngDialog-theme-default.min.css">
+    <link rel="stylesheet" href="bower_components/angular-ui-grid/ui-grid.css">
     <link rel="stylesheet" href="stylesheets/style.css">
 
   </head>
@@ -30,8 +32,8 @@
           <li>
             <label>{{ 'LANGUAGE_SWITCH' | translate }}</label>
             <div class="btn-group" ng-model="button.radio" bs-radio-group>
-              <label class="btn btn-default"><input class="btn btn-default" value="0" type="radio"> EN</label>
-              <label class="btn btn-default"><input class="btn btn-default" value="1" type="radio"> GER</label>
+              <label class="btn btn-default btn-xs"><input class="btn btn-default" value="0" type="radio"> EN</label>
+              <label class="btn btn-default btn-xs"><input class="btn btn-default" value="1" type="radio"> GER</label>
               <!-- Children get compiled by `bs-radio-group` to :
               <label class="btn btn-default"><input type="radio" class="btn btn-default" value="left" ng-model="button.radio" bs-radio> Left</label>
               ...
@@ -57,7 +59,9 @@
     <script type="text/javascript" src="bower_components/angular-strap/dist/angular-strap.min.js"></script>  
     <script type="text/javascript" src="bower_components/angular-strap/dist/angular-strap.tpl.min.js"></script>
     <script type="text/javascript" src="bower_components/angular-translate/angular-translate.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-ui-grid/ui-grid.min.js"></script>
     <script type="text/javascript" src="bower_components/ng-dialog/js/ngDialog.min.js"></script>
+
 
     <!-- controller and co -->
     <script type="text/javascript" src="javascripts/opbb-app.js"></script>

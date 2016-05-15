@@ -1,5 +1,5 @@
 var opbb = angular
-	.module('opbb', ['ngRoute','pascalprecht.translate','mgcrea.ngStrap'])
+	.module('opbb', ['ngRoute','pascalprecht.translate','mgcrea.ngStrap', 'ui.grid', 'ui.grid.edit'])
 	.controller('mainCtrl', mainCtrl)
 	.config(route);
 
@@ -13,7 +13,8 @@ function mainCtrl($log){
 
 }
 
-function route($routeProvider){
+function route($routeProvider, $locationProvider){
+    $locationProvider.html5Mode(true);
 
     $routeProvider
         .when('/articles',{
