@@ -1,0 +1,5 @@
+id;customer_id;customer;sum_net;sum_with_vat;vat_rate;sum_total;order_date;status;due_date;pay_date;billing_address;delivery_address
+1;1;Froggi the Frog;1000,00;1900,00;19;190;11.11.2015;payed;11.12.2015;05.12.2015;Teichstrasse 1,01211 Bonn;Wasserweg 11,01212 Mannheim
+2;1;Froggi the Frog;1000,00;1900,00;19;190;11.11.2015;payed;11.12.2015;05.12.2015;Teichstrasse 1,01211 Bonn;Wasserweg 11,01212 Mannheim
+3;1;Froggi the Frog;1000,00;1900,00;19;190;11.11.2015;in_work;;;Teichstrasse 1,01211 Bonn;Wasserweg 11,01212 Mannheim
+4;1;Froggi the Frog;1000,00;1900,00;19;190;11.11.2015;cancled;;;Teichstrasse 1,01211 Bonn;Wasserweg 11,01212 Mannheim

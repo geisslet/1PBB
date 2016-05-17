@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
-var article = require('./routes/article');
+var data = require('./routes/data');
 var app = express();
 
 // view engine setup
@@ -26,7 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
-app.use('/article', article);
+app.use('/data', data);
 
 /// log the client IP
 app.use(function (req, res, next) {

@@ -1,0 +1,7 @@
+bill_id;collection;type;name;description;price_net;amount;price_sum_net;price_sum_with_vat;variations
+1;essential no.1;something;prod1;super cool spoon;10.00;2;20.00;23.80;Größe:S, Verschluß:Ring
+1;essential no.1;something;prod1;super cool forka;10.00;2;20.00;23.80;Größe:S, Verschluß:Ring
+1;essential no.1;something;prod1;super cool brush;10.00;2;20.00;23.80;Größe:S, Verschluß:Ring
+2;essential no.1;something;prod1;super cool spoon;10.00;2;20.00;23.80;Größe:S, Verschluß:Ring
+2;essential no.1;something;prod1;super cool forka;10.00;2;20.00;23.80;Größe:S, Verschluß:Ring
+2;essential no.1;something;prod1;super cool brush;10.00;2;20.00;23.80;Größe:S, Verschluß:Ring

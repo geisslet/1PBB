@@ -12,21 +12,26 @@ var csv = require('csv');
 var fs = require('fs');
 //
 
-var content = [];
+var articles = [];
+var variations = [];
+var bills = [];
+var billYears = [];
+var customers = [];
+var offers = [];
+var offersYears = [];
+
 var parser = csv.parse({columns: true, delimiter: ';'}, function(err, data){
   console.log(data);
   content.push(data);
 });
 
 
-/* GET users listing. */
-router.get('/', function(req, res) {
-  process.stdout.write('get.article: ' + req);  
+router.get('/products', function(req, res) {
+  process.stdout.write('get.products: ' + req);  
 
   console.log('console.test wa');
 
   //client.log('get.article: ' + JSON.stringify(req)); 
-
 
   fs.readFile(__dirname+'/../data/products.csv', (err, data) => {
     if (err) throw err;
@@ -38,21 +43,50 @@ router.get('/', function(req, res) {
 
     });
   });
-
-
-  //fs.createReadStream(__dirname+'/../data/products.csv').pipe(parser);
-
-  //res.send({});
-
-
- // res.send('respond seconde with a resource - hä? warum sehe ich nichts anders');
-
-
 });
 
-router.get('/article', function (req, res) {
-  res.send('Hello World!');
+router.get('/customers', function (req, res) {
+
+  fs.readFile(__dirname+'/../data/customers.csv', (err, data) => {
+    if (err) throw err;
+    //console.log(data);
+
+    csv.parse(data, {columns: true, delimiter: ';'}, (err, data)=>{
+      //content = data;
+        res.send(data);
+
+    });
+  });
 });
+
+router.get('/variations', function (req, res) {
+
+  fs.readFile(__dirname+'/../data/variations.csv', (err, data) => {
+    if (err) throw err;
+    //console.log(data);
+
+    csv.parse(data, {columns: true, delimiter: ';'}, (err, data)=>{
+      //content = data;
+        res.send(data);
+
+    });
+  });
+});
+
+router.get('/orders:year', function (req, res) {
+
+  fs.readFile(__dirname+'/../data/orders_'+year+'.csv', (err, data) => {
+    if (err) throw err;
+    //console.log(data);
+
+    csv.parse(data, {columns: true, delimiter: ';'}, (err, data)=>{
+      //content = data;
+        res.send(data);
+
+    });
+  });
+});
+
 
 router.post('/', function (req, res) {
   res.send('Got a POST request');

@@ -19,7 +19,8 @@ function ArticlesCtrl ($log,$http){
 		$log.debug('ArticlesCtrl.activate called');
 
 		var method = 'GET';
-		var url = 'http://localhost:3000/article';
+		//var url = 'http://localhost:3000/article';
+		var url = 'http://geisslet-old-horse.vsv4j2ufg0pruobz.myfritz.net:3000/article';
 
 		$http({method: method, url: url})
 			.then(function success(response) {

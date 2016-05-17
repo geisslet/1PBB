@@ -1,5 +1,5 @@
 var opbb = angular
-	.module('opbb', ['ngRoute','pascalprecht.translate','mgcrea.ngStrap', 'ui.grid', 'ui.grid.edit'])
+	.module('opbb', ['ngRoute','pascalprecht.translate','mgcrea.ngStrap', 'ui.grid', 'ui.grid.edit', 'ui.grid.selection'])
 	.controller('mainCtrl', mainCtrl)
 	.config(route);
 
