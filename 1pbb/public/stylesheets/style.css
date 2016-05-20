@@ -16,3 +16,8 @@ a {
 	width:60px;
 	height:60px;
 }
+
+.nav-item{
+	padding-bottom: 15px;
+	padding-top: 15px;
+}

@@ -1,20 +1,24 @@
 angular
 	.module('opbb')
-	.controller('CustomersCtrl', CustomersCtrl);
+	.controller('ProductsCtrl', ProductsCtrl);
 
 
-CustomersCtrl.$inject = ['$log', 'DataApi'];
-function CustomersCtrl ($log, DataApi){
+ProductsCtrl.$inject = ['$log', 'DataApi'];
+function ProductsCtrl ($log, DataApi){
+
+	$log.debug('ProductsCtrl init');
 
 	var vm = this;
+
 	vm.items = [];
 	vm.status = undefined;
-	vm.gridOptions = [];
+	vm.gridOptions = {};
 
 	vm.activate = function fActivate(){
-		$log.debug('CustomersCtrl.activate called');
+		$log.debug('ProductsCtrl.activate called ' + DataApi.modeProducts);
 
-		DataApi.get(DataApi.modeCustomers)
+/*
+		DataApi.get( DataApi.modeProducts )
 			.then(function success(response){
 
 				vm.status = response.status;
@@ -23,11 +27,11 @@ function CustomersCtrl ($log, DataApi){
 			
 			}, function fail(response){
 				
-				$log.debug('CustomersCtrl.activate.get failed');
+				$log.debug('ProductsCtrl.activate.get failed');
 				vm.items = response.data || "Request failed";
 				vm.status = response.status;
 
-			});
+			});*/
 	};
 
 }

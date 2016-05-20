@@ -4,55 +4,7 @@
     <title>OPBB</title>
     <base href="/">
 
-    <!-- styles -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="bower_components/ng-dialog/css/ngDialog.min.css">
-    <link rel="stylesheet" href="bower_components/ng-dialog/css/ngDialog-theme-default.min.css">
-    <link rel="stylesheet" href="bower_components/angular-ui-grid/ui-grid.css">
-    <link rel="stylesheet" href="stylesheets/style.css">
-
-  </head>
-  
-  <body ng-app="opbb" ng-controller="mainCtrl as vm">
-
-    <nav class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="navigation" bs-navbar>
-      
-      <div class="container">
-        <div class="navbar-header"> 
-          <a class="navbar-brand" href="#">OPBB</a>
-        </div>
-        <ul class="nav navbar-nav">
-          <li data-match-route="/$"><a href="#/">{{'NAV_HOME' | translate}}</a></li>
-          <li data-match-route="/page-one"><a href="#/page-one">Page One</a></li>
-        </ul>
-
-
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-            <label>{{ 'LANGUAGE_SWITCH' | translate }}</label>
-            <div class="btn-group" ng-model="button.radio" bs-radio-group>
-              <label class="btn btn-default btn-xs"><input class="btn btn-default" value="0" type="radio"> EN</label>
-              <label class="btn btn-default btn-xs"><input class="btn btn-default" value="1" type="radio"> GER</label>
-              <!-- Children get compiled by `bs-radio-group` to :
-              <label class="btn btn-default"><input type="radio" class="btn btn-default" value="left" ng-model="button.radio" bs-radio> Left</label>
-              ...
-              -->
-            </div>
-          </li>
-          <li>
-            <a target="_blank" href="//github.com/mgcrea/angular-strap">
-              <i class="fa fa-github"></i>
-               GitHub
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <div ng-view></div>
-
-        <!-- 3rd party stuff to make it nice -->
+    <!-- 3rd party stuff to make it nice -->
     <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
     <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
     <script type="text/javascript" src="bower_components/angular-strap/dist/angular-strap.min.js"></script>  
@@ -64,8 +16,68 @@
     <!-- controller and co -->
     <script type="text/javascript" src="javascripts/opbb-app.js"></script>
     <script type="text/javascript" src="javascripts/opbb-config.js"></script>
-    <script type="text/javascript" src="javascripts/articles/ArticlesCtrl.js"></script>
-    <!--script type="text/javascript" src="javascripts/article/ArticlesCtrl.js"></script-->
+    <script type="text/javascript" src="javascripts/settings/SettingsService.js"></script>
+    <script type="text/javascript" src="javascripts/DataApi.js"></script>
+
+    <script type="text/javascript" src="javascripts/opbb-ctrl.js"></script>
+    <script type="text/javascript" src="javascripts/bills/BillsCtrl.js"></script>
+    <script type="text/javascript" src="javascripts/customers/CustomersCtrl.js"></script>
+    <script type="text/javascript" src="javascripts/offers/OffersCtrl.js"></script>
+    <script type="text/javascript" src="javascripts/products/ProductsCtrl.js"></script>
+    <script type="text/javascript" src="javascripts/statistics/StatisticsCtrl.js"></script>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/ng-dialog/css/ngDialog.min.css">
+    <link rel="stylesheet" href="bower_components/ng-dialog/css/ngDialog-theme-default.min.css">
+    <link rel="stylesheet" href="bower_components/angular-ui-grid/ui-grid.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  </head>
+  
+  <body ng-app="opbb" ng-controller="mainCtrl as vm">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="navigation" bs-navbar>
+      
+      <div class="container">
+        <div class="navbar-header"> 
+          <a class="navbar-brand" href="#">OPBB</a>
+        </div>
+        <ul class="nav navbar-nav hidden-xs hidden-sm">
+          <li data-match-route="/$"><a href="#/">{{'NAV_HOME' | translate}}</a></li>
+          <li data-match-route="/page-one"><a href="#/page-one">Page One</a></li>
+        </ul>
+
+
+        <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm">
+          <li>
+            <label>{{ 'LANGUAGE_SWITCH' | translate }}</label>
+            <div class="btn-group  nav-item" ng-model="button.radio" bs-radio-group>
+              <label class="btn btn-default btn-xs"><input class="btn btn-default" value="0" type="radio" active> EN</label>
+              <label class="btn btn-default btn-xs"><input class="btn btn-default" value="1" type="radio"> GER</label>
+              <!-- Children get compiled by `bs-radio-group` to :
+              <label class="btn btn-default"><input type="radio" class="btn btn-default" value="left" ng-model="button.radio" bs-radio> Left</label>
+              ...
+              -->
+            </div>
+          </li>
+          <li>
+            <a target="_blank" href="//github.com/geisslet/opbb">
+              <i class="fa fa-github"></i>
+               GitHub
+            </a>
+          </li>
+          <li>
+            <label class="btn btn-default btn-xs nav-item" ng-click="vm.switchEnv()">{{vm.env}}</label>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div ng-view></div>
+
   </body>
 
 </html>

@@ -1,3 +1,5 @@
+//jshint esversion:6;
+
 var express = require('express');
 var router = express.Router();
 
@@ -20,68 +22,67 @@ var customers = [];
 var offers = [];
 var offersYears = [];
 
+/*
 var parser = csv.parse({columns: true, delimiter: ';'}, function(err, data){
   console.log(data);
   content.push(data);
 });
-
+*/
 
 router.get('/products', function(req, res) {
-  process.stdout.write('get.products: ' + req);  
-
-  console.log('console.test wa');
-
-  //client.log('get.article: ' + JSON.stringify(req)); 
+  process.stdout.write('get.products: ' + req + '\n');  
 
   fs.readFile(__dirname+'/../data/products.csv', (err, data) => {
     if (err) throw err;
-    //console.log(data);
 
-    csv.parse(data, {columns: true, delimiter: ';'}, (err, data)=>{
-      //content = data;
-        res.send(data);
+    csv.parse(data, {columns: true, delimiter: ';'}, (err, csvdata)=>{
+        if (err) throw err;
 
+        products = csvdata;
+        res.send(products);
     });
   });
 });
 
 router.get('/customers', function (req, res) {
+  process.stdout.write('get.customers: ' + req +'\n');
 
   fs.readFile(__dirname+'/../data/customers.csv', (err, data) => {
     if (err) throw err;
-    //console.log(data);
 
-    csv.parse(data, {columns: true, delimiter: ';'}, (err, data)=>{
-      //content = data;
-        res.send(data);
-
+    csv.parse(data, {columns: true, delimiter: ';'}, (err, csvdata)=>{
+        if (err) throw err;
+        
+        customers = csvdata;
+        res.send(customers);
     });
   });
 });
 
 router.get('/variations', function (req, res) {
+  process.stdout.write('get.variations: ' + req + '\n');
 
   fs.readFile(__dirname+'/../data/variations.csv', (err, data) => {
     if (err) throw err;
-    //console.log(data);
 
-    csv.parse(data, {columns: true, delimiter: ';'}, (err, data)=>{
-      //content = data;
-        res.send(data);
+    csv.parse(data, {columns: true, delimiter: ';'}, (err, csvdata)=>{
+        if (err) throw err;
 
+        variations = csvdata;
+        res.send(variations);
     });
   });
 });
 
 router.get('/orders:year', function (req, res) {
+  process.stdout.write('get.orders: ' + req + '\n');
 
   fs.readFile(__dirname+'/../data/orders_'+year+'.csv', (err, data) => {
     if (err) throw err;
-    //console.log(data);
 
-    csv.parse(data, {columns: true, delimiter: ';'}, (err, data)=>{
-      //content = data;
-        res.send(data);
+    csv.parse(data, {columns: true, delimiter: ';'}, (err, csvdata)=>{
+        orders = csvdata;
+        res.send(orders);
 
     });
   });

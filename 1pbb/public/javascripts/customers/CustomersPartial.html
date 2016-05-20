@@ -1,4 +1,12 @@
 <div ng-controller="CustomersCtrl as vm">
 
 	<h1>{{ 'CUSTOMERS' | translate }} </h1>
+
+
+	<ul>
+        <div ng-repeat="item in data | filter:q | startFrom:currentPage*pageSize | limitTo:pageSize">
+            {{item}}
+          <hr>
+        </div>
+    </ul>
 </div>

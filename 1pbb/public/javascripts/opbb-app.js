@@ -1,23 +1,19 @@
-var opbb = angular
-	.module('opbb', ['ngRoute','pascalprecht.translate','mgcrea.ngStrap', 'ui.grid', 'ui.grid.edit', 'ui.grid.selection'])
-	.controller('mainCtrl', mainCtrl)
-	.config(route);
+angular.module('opbb', [
+    'ngRoute',
+    'pascalprecht.translate',
+    'mgcrea.ngStrap', 
+    'ui.grid', 
+    'ui.grid.edit', 
+    'ui.grid.selection'])
+    .config(route);
 
-
-mainCtrl.$inject = ['$log'];
-function mainCtrl($log){
-	$log.debug('opbb.mainCtrl init.');
-
-	var vm = this;
-
-}
 
 function route($routeProvider){
     //$locationProvider.html5Mode(true);
 
     $routeProvider
-        .when('/articles',{
-            templateUrl: 'javascripts/articles/ArticlesPartial.html',
+        .when('/products',{
+            templateUrl: 'javascripts/products/ProductsPartial.html',
         })
         .when('/customers',{
             templateUrl: 'javascripts/customers/CustomersPartial.html'
@@ -41,3 +37,4 @@ function route($routeProvider){
             templateUrl: 'javascripts/home/HomePartial.html'
         });
 }
+
