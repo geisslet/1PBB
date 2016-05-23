@@ -2,6 +2,10 @@
 
 	<h1>{{ 'ARTICLES' | translate }} </h1>
 
+	<button class="btn btn-default" ng-click="vm.activate()"><i class="fa fa-refresh"></i>Refresh</button>
+	<button class="btn btn-default" ng-click="vm.safe()"><i class="fa fa-floppy-o"></i>Save</button>
+
+
 	<!-- overview -->
 	<div ui-grid="vm.gridOptions" ui-grid-edit ui-grid-selection class="grid"></div>
 	

@@ -19,7 +19,7 @@ function CustomersCtrl ($log, DataApi){
 
 				vm.status = response.status;
 				vm.items = response.data;
-				vm.gridOptions.data = vm.items;
+				//vm.gridOptions.data = vm.items;
 			
 			}, function fail(response){
 				

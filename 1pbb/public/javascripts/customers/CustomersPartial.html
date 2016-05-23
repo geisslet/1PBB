@@ -1,12 +1,16 @@
-<div ng-controller="CustomersCtrl as vm">
+<div ng-controller="CustomersCtrl as vm" ng-init="vm.activate()">
 
 	<h1>{{ 'CUSTOMERS' | translate }} </h1>
 
+	<button class="btn btn-default" ng-click="vm.activate()"><i class="fa fa-refresh"></i>Refresh</button>
+	<button class="btn btn-default" ng-click="vm.safe()"><i class="fa fa-floppy-o"></i>Save</button>
+	
+	<!-- | filter:q | startFrom:currentPage*pageSize | limitTo:pageSize -->
 
 	<ul>
-        <div ng-repeat="item in data | filter:q | startFrom:currentPage*pageSize | limitTo:pageSize">
+        <li ng-repeat="item in vm.items ">
             {{item}}
           <hr>
-        </div>
+        </li>
     </ul>
 </div>

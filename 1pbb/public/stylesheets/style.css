@@ -1,10 +1,15 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  align-content: center;
 }
 
 a {
   color: #00B7FF;
+}
+
+.centered{
+	align: center;
 }
 
 .img-lg{
