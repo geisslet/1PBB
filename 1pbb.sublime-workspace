@@ -4,6 +4,70 @@
 		"selected_items":
 		[
 			[
+				"_",
+				"_readFile"
+			],
+			[
+				"req",
+				"require"
+			],
+			[
+				"ng-in",
+				"ng-init	AngularJS"
+			],
+			[
+				"re",
+				"reject"
+			],
+			[
+				"ale",
+				"align-content"
+			],
+			[
+				"m",
+				"modeProducts"
+			],
+			[
+				"api",
+				"api"
+			],
+			[
+				"e",
+				"env"
+			],
+			[
+				"se",
+				"selectedBaseUrl"
+			],
+			[
+				"Se",
+				"SettingService"
+			],
+			[
+				"ng-c",
+				"ng-click	AngularJS"
+			],
+			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"csv",
+				"csvdata"
+			],
+			[
+				"pr",
+				"products"
+			],
+			[
+				"cos",
+				"console"
+			],
+			[
+				"va",
+				"variations"
+			],
+			[
 				"$loca",
 				"$locationProvider	AngularJS"
 			],
@@ -52,10 +116,6 @@
 				"margin-top"
 			],
 			[
-				"pa",
-				"padding-top"
-			],
-			[
 				"res",
 				"resolve"
 			],
@@ -66,10 +126,6 @@
 			[
 				"es",
 				"esFactory"
-			],
-			[
-				"e",
-				"elasticsearch"
 			],
 			[
 				"lo",
@@ -120,50 +176,66 @@
 	"buffers":
 	[
 		{
+			"file": "1pbb/public/javascripts/products/ProductsCtrl.js",
+			"settings":
+			{
+				"buffer_size": 1217,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "1pbb/routes/data.js",
+			"settings":
+			{
+				"buffer_size": 3709,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "1pbb/public/default.html",
 			"settings":
 			{
-				"buffer_size": 3173,
+				"buffer_size": 4051,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "1pbb/public/javascripts/opbb-app.js",
+			"file": "1pbb/public/javascripts/products/ProductsPartial.html",
 			"settings":
 			{
-				"buffer_size": 1133,
+				"buffer_size": 489,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "1pbb/public/javascripts/articles/ArticlesPartial.html",
+			"file": "1pbb/public/javascripts/customers/CustomersPartial.html",
 			"settings":
 			{
-				"buffer_size": 244,
+				"buffer_size": 502,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "1pbb/public/javascripts/opbb-config.js",
+			"file": "1pbb/public/javascripts/customers/CustomersCtrl.js",
 			"settings":
 			{
-				"buffer_size": 1204,
+				"buffer_size": 689,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "1pbb/public/javascripts/articles/ArticlesCtrl.js",
+			"file": "1pbb/public/javascripts/DataApi.js",
 			"settings":
 			{
-				"buffer_size": 669,
+				"buffer_size": 1499,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "1pbb/routes/article.js",
+			"file": "1pbb/public/javascripts/settings/SettingsService.js",
 			"settings":
 			{
-				"buffer_size": 1756,
+				"buffer_size": 707,
 				"line_ending": "Unix"
 			}
 		}
@@ -218,52 +290,69 @@
 	"expanded_folders":
 	[
 		"/home/geisslet/git/1pbb",
-		"/home/geisslet/git/1pbb/bin",
-		"/home/geisslet/git/1pbb/data",
 		"/home/geisslet/git/1pbb/public",
 		"/home/geisslet/git/1pbb/public/javascripts",
-		"/home/geisslet/git/1pbb/public/javascripts/articles",
-		"/home/geisslet/git/1pbb/public/javascripts/bills",
 		"/home/geisslet/git/1pbb/public/javascripts/customers",
 		"/home/geisslet/git/1pbb/public/javascripts/home",
-		"/home/geisslet/git/1pbb/public/javascripts/offers",
+		"/home/geisslet/git/1pbb/public/javascripts/products",
+		"/home/geisslet/git/1pbb/public/javascripts/settings",
 		"/home/geisslet/git/1pbb/public/javascripts/statistics",
 		"/home/geisslet/git/1pbb/public/stylesheets",
 		"/home/geisslet/git/1pbb/routes"
 	],
 	"file_history":
 	[
-		"/home/geisslet/git/1pbb/opbb-server.js",
-		"/home/geisslet/git/1pbb/app.js",
-		"/home/geisslet/git/1pbb/data/products.csv",
-		"/home/geisslet/git/1pbb/public/javascripts/opbb-app.js",
+		"/home/geisslet/.config/sublime-text-3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/home/geisslet/.config/sublime-text-3/Packages/Babel/Babel.sublime-settings",
+		"/home/geisslet/git/1pbb/routes/data.js",
+		"/home/geisslet/git/1pbb/public/default.html",
+		"/home/geisslet/git/1pbb/public/javascripts/opbb-ctrl.js",
 		"/home/geisslet/git/1pbb/public/javascripts/home/HomePartial.html",
-		"/home/geisslet/git/1pbb/data/variations.csv",
+		"/home/geisslet/git/1pbb/public/stylesheets/style.css",
+		"/home/geisslet/git/1pbb/public/javascripts/customers/CustomersCtrl.js",
+		"/home/geisslet/git/1pbb/public/javascripts/settings/SettingsService.js",
 		"/home/geisslet/git/1pbb/public/javascripts/opbb-config.js",
+		"/home/geisslet/git/1pbb/public/javascripts/opbb-app.js",
+		"/home/geisslet/git/1pbb/public/javascripts/customers/CustomersPartial.html",
+		"/home/geisslet/git/1pbb/data/customers.csv",
+		"/home/geisslet/git/1pbb/data/variations.csv",
+		"/home/geisslet/git/1pbb/public/javascripts/articles/ProductsCtrl.js",
+		"/home/geisslet/git/1pbb/public/javascripts/articles/ProductsPartial.html",
+		"/home/geisslet/git/1pbb/public/javascripts/products/ProductsPartial.html",
+		"/home/geisslet/git/1pbb/routes/users.js",
+		"/home/geisslet/git/1pbb/opbb-server.js",
+		"/home/geisslet/git/1pbb/data/orders_2015_positions.csv",
+		"/home/geisslet/git/1pbb/data/offers_2015.csv",
+		"/home/geisslet/git/1pbb/data/order_2015.csv",
+		"/home/geisslet/git/1pbb/data/articles.csv",
+		"/home/geisslet/git/1pbb/data/order_2015_positions.csv",
+		"/home/geisslet/git/1pbb/data/bills_positions_2015.csv",
+		"/home/geisslet/git/1pbb/data/bills_2015.csv",
+		"/home/geisslet/git/1pbb/public/javascripts/articles/ArticlesPartial.html",
+		"/home/geisslet/git/1pbb/routes/index.js",
+		"/home/geisslet/git/1pbb/package.json",
+		"/home/geisslet/git/1pbb/npm-debug.log",
+		"/home/geisslet/git/1pbb/data/products.csv",
+		"/home/geisslet/git/1pbb/data/user.csv",
+		"/home/geisslet/git/1pbb/views/layout.jade",
+		"/home/geisslet/git/1pbb/views/index.jade",
+		"/home/geisslet/git/1pbb/routes/article.js",
+		"/home/geisslet/git/1pbb/public/javascripts/articles/ArticlesCtrl.js",
+		"/home/geisslet/git/1pbb/views/error.jade",
+		"/home/geisslet/git/1pbb/app.js",
 		"/home/geisslet/git/1pbb/data/bills.csv",
 		"/home/geisslet/git/1pbb/public/javascripts/offers/OffersCtrl.js",
-		"/home/geisslet/git/1pbb/views/error.jade",
-		"/home/geisslet/git/1pbb/data/user.csv",
-		"/home/geisslet/git/1pbb/public/javascripts/articles/ArticlesCtrl.js",
 		"/home/geisslet/git/1pbb/public/javascripts/statistics/StatisticsCtrl.js",
 		"/home/geisslet/git/1pbb/public/javascripts/statistics/StatisticsPartial.html",
 		"/home/geisslet/git/1pbb/public/javascripts/offers/OffersPartial.html",
-		"/home/geisslet/git/1pbb/public/javascripts/customers/CustomersPartial.html",
-		"/home/geisslet/git/1pbb/public/javascripts/customers/CustomersCtrl.js",
-		"/home/geisslet/git/1pbb/public/javascripts/articles/ArticlesPartial.html",
 		"/home/geisslet/git/1pbb/public/javascripts/bills/BillssPartial.html",
 		"/home/geisslet/git/1pbb/public/javascripts/bills/BillsCtrl.js",
 		"/home/geisslet/git/1pbb/public/javascripts/article/ArticlesCtrl.js",
 		"/home/geisslet/quappe-git/client/web/app/quappe.app.js",
 		"/home/geisslet/quappe-git/client/web/app/features/quappe.hello.ctrl.js",
 		"/home/geisslet/git/1pbb/bin/www",
-		"/home/geisslet/git/1pbb/routes/article.js",
 		"/home/geisslet/quappe-git/client/web/app/features/quappe.statement.detail.ctrl.js",
 		"/home/geisslet/quappe-git/client/web/app/features/quappe.browse.ctrl.js",
-		"/home/geisslet/git/1pbb/public/stylesheets/style.css",
-		"/home/geisslet/git/1pbb/routes/users.js",
-		"/home/geisslet/git/1pbb/routes/index.js",
-		"/home/geisslet/git/1pbb/views/index.jade",
 		"/home/geisslet/git/1pbb.sublime-workspace",
 		"/home/geisslet/git/1pbb.sublime-project",
 		"/home/geisslet/quappe-git/client/web/app/style/quappe-style.css",
@@ -276,7 +365,6 @@
 		"/home/geisslet/quappe-git/client/web/app/features/quappe.statement.post.html",
 		"/home/geisslet/quappe-git/client/web/app/bower_components/elasticsearch/elasticsearch.js",
 		"/home/geisslet/quappe-git/client/web/app/features/quappe.sign-up.ctrl.js",
-		"/home/geisslet/.config/sublime-text-3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
 		"/home/geisslet/quappe-git/client/web/app/features/quappe.statement.post.ctrl.js",
 		"/home/geisslet/quappe-git/client/web/app/features/quappe.statement.detail.html",
 		"/home/geisslet/quappe-git/client/web/app/features/quappe.sign-in.ctrl.js",
@@ -312,6 +400,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"fork",
 			"Article",
 			"module",
 			"elasticsearch"
@@ -322,6 +411,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"forka",
 			"Statistic"
 		],
 		"reverse": false,
@@ -333,54 +423,53 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "1pbb/public/default.html",
+					"file": "1pbb/public/javascripts/products/ProductsCtrl.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3173,
+						"buffer_size": 1217,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								83,
-								83
+								382,
+								382
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "1pbb/public/javascripts/opbb-app.js",
+					"file": "1pbb/routes/data.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1133,
+						"buffer_size": 3709,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								332,
-								332
+								2,
+								2
 							]
 						],
 						"settings":
@@ -393,24 +482,82 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "1pbb/public/javascripts/articles/ArticlesPartial.html",
+					"file": "1pbb/public/default.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 244,
+						"buffer_size": 4051,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								149,
-								149
+								4006,
+								4006
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 476.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "1pbb/public/javascripts/products/ProductsPartial.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 489,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								107,
+								107
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "1pbb/public/javascripts/customers/CustomersPartial.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 502,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								312,
+								312
 							]
 						],
 						"settings":
@@ -425,91 +572,90 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "1pbb/public/javascripts/opbb-config.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1204,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1149,
-								1149
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "1pbb/public/javascripts/articles/ArticlesCtrl.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 669,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								215,
-								215
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
 					"buffer": 5,
-					"file": "1pbb/routes/article.js",
+					"file": "1pbb/public/javascripts/customers/CustomersCtrl.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1756,
+						"buffer_size": 689,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								826,
-								826
+								545,
+								545
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 91.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "1pbb/public/javascripts/DataApi.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1499,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1158,
+								1158
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 182.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "1pbb/public/javascripts/settings/SettingsService.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 707,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								338,
+								338
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
 					"type": "text"
 				}
 			]
@@ -592,7 +738,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 282.0,
+	"side_bar_width": 283.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

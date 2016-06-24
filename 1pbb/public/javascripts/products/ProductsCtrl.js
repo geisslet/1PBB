@@ -22,7 +22,7 @@ function ProductsCtrl ($log, DataApi){
 		DataApi.get( DataApi.modeProducts )
 			.then(function success(response){
 
-				console.log(response);
+				$log.debug(response);
 
 				vm.status = response.status;
 				vm.items = response.data;
@@ -38,25 +38,27 @@ function ProductsCtrl ($log, DataApi){
 	};
 
 	vm.safe = function _safe(){
+		$log.debug('ProductsCtrl.safe called ' + DataApi.modeProducts);
+
 		DataApi.update( DataApi.modeProducts, vm.items )
 			.then(function success(response){
 
+				$log.debug(response);
+				
 				/*
 				vm.status = response.status;
 				vm.items = response.data;
 				vm.gridOptions.data = vm.items;
-			
-		*/
+				*/
 			}, function fail(response){
-		/*		
+
+				$log.debug(response);
+
+				/*		
 				$log.debug('ProductsCtrl.activate.get failed');
 				vm.items = response.data || "Request failed";
 				vm.status = response.status;
-*/
+				*/
 			});
-
-
-		
 	};
-
 }

@@ -10,6 +10,8 @@ var users = require('./routes/users');
 var data = require('./routes/data');
 var app = express();
 
+//function checkAuth()
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');

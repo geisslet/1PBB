@@ -4,7 +4,8 @@ angular.module('opbb', [
     'mgcrea.ngStrap', 
     'ui.grid', 
     'ui.grid.edit', 
-    'ui.grid.selection'])
+    'ui.grid.selection',
+    'ngDialog'])
     .config(route);
 
 

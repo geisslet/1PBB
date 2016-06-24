@@ -12,6 +12,7 @@ var client = loggly.createClient({
 });*/
 
 var csv = require('csv');
+var csvWrite = require('csv-stringify');
 var fs = require('fs');
 //
 
@@ -44,75 +45,74 @@ var reader = function _readFile (fileName, res) {
         });
 
     } catch (err) {
-        console.log(err);
+        console.error(err);
         res.send(err);
     }
 
 };
 
-var writer = function _writeFile(fileName, conentObj){
+var writer = function _writeFile(fileName, contentObj, res){
+
+    try{
+
+        process.stdout.write('write File entered: ' +__dirname+ fileName + '\n');  
+        process.stdout.write('');
 
 
+        csvWrite(contentObj, (err, csvdata)=>{
+
+            process.stdout.write('write File csvWrite: ' +__dirname+ fileName + '\n');  
+            
+            if (err) res.send(err);//throw err;
+
+            console.log(csvdata);
+
+            fs.writeFile(__dirname+fileName, csvdata, (err) => {
+
+                process.stdout.write('write File write: ' +__dirname+ fileName + '\n');  
+                if (err) res.send(err);//throw err;
+                
+
+                res.send("saving ok.");
+            });
+        });
+       
+
+
+    } catch (err) {
+        console.error(err);
+        res.send(err);
+    }
 
 };
 
-/*
-var parser = csv.parse({columns: true, delimiter: ';'}, function(err, data){
-  console.log(data);
-  content.push(data);
-});
-*/
-
+// products file ----------------------------------------------------
+var prodFile = '/../data/products.csv';
 router.get('/products', function(req, res) {
     process.stdout.write('get.products: ' + req + '\n');
+    reader(prodFile, res);
+});
+router.post('/products', function (req, res) {
+    process.stdout.write('post.products: ' + JSON.stringify(req.body) + '\n'); 
 
-    reader('/../data/products.csv', res);
+    //process.stdout.write(JSON.stringify(req));
 
-
-    /*reader.then(function(data){
-
-        products = data;
-        console.log(products);
-        res.send(products);
-
-    }, function(err){
-
-        console.log(err);
-        res.send(err);
-
-    });*/
-
-/*
-    fs.readFile(__dirname+'/../data/products.csv', (err, data) => {
-        if (err) throw err;
-
-        csv.parse(data, {columns: true, delimiter: ';'}, (err, csvdata)=>{
-            if (err) throw err;
-
-            products = csvdata;
-            res.send(products);
-        });
-    });*/
+    writer(prodFile, req.body, res);
 });
 
+// customers file ----------------------------------------------------
+var customersFile = '/../data/customers.csv';
 router.get('/customers', function (req, res) {
   process.stdout.write('get.customers: ' + req +'\n');
-
-  reader('/../data/customers.csv', res);
-
-  /*
-  fs.readFile(__dirname+'/../data/customers.csv', (err, data) => {
-    if (err) throw err;
-
-    csv.parse(data, {columns: true, delimiter: ';'}, (err, csvdata)=>{
-        if (err) throw err;
-        
-        customers = csvdata;
-        res.send(customers);
-    });
-  });*/
-
+  reader(customersFile, res);
 });
+router.post('/customers', function (req, res) {
+    process.stdout.write('post.customers: ' + JSON.stringify(req) + '\n');   
+    writer(producrssFile, req, res);
+});
+
+
+
 
 router.get('/variations', function (req, res) {
     process.stdout.write('get.variations: ' + req + '\n');
@@ -144,9 +144,7 @@ router.get('/orders:year', function (req, res) {
 });
 
 
-router.post('/', function (req, res) {
-    res.send('Got a POST request');
-});
+
 
 
 router.put('/user', function (req, res) {
