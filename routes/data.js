@@ -29,8 +29,9 @@ var reader = function _readFile (fileName, res) {
     try{
 
         process.stdout.write('read File: ' +__dirname+ fileName + '\n');  
-
-        fs.readFile(__dirname+fileName, (err, data) => {
+	console.log('read File: ' +__dirname+ fileName + '\n');
+        
+	fs.readFile(__dirname+fileName, (err, data) => {
         
             if (err) res.send(err);//throw err;
 

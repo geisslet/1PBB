@@ -7,34 +7,34 @@
 6 info start opbb@0.0.1
 7 verbose unsafe-perm in lifecycle true
 8 info opbb@0.0.1 Failed to exec start script
-9 verbose stack Error: opbb@0.0.1 start: `nodejs ./bin/www "opbb-server.js"`
-9 verbose stack spawn ENOENT
-9 verbose stack     at ChildProcess.<anonymous> (/usr/lib/node_modules/npm/lib/utils/spawn.js:17:16)
+9 verbose stack Error: opbb@0.0.1 start: `node ./bin/www "opbb-server.js"`
+9 verbose stack Exit status 1
+9 verbose stack     at EventEmitter.<anonymous> (/usr/lib/node_modules/npm/lib/utils/lifecycle.js:217:16)
+9 verbose stack     at emitTwo (events.js:87:13)
+9 verbose stack     at EventEmitter.emit (events.js:172:7)
+9 verbose stack     at ChildProcess.<anonymous> (/usr/lib/node_modules/npm/lib/utils/spawn.js:24:14)
 9 verbose stack     at emitTwo (events.js:87:13)
 9 verbose stack     at ChildProcess.emit (events.js:172:7)
 9 verbose stack     at maybeClose (internal/child_process.js:827:16)
 9 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
 10 verbose pkgid opbb@0.0.1
-11 verbose cwd /home/geisslet/1PBB/1pbb
+11 verbose cwd /home/geisslet/1PBB
 12 error Linux 3.10.0-042stab113.17
 13 error argv "/usr/bin/node" "/usr/bin/npm" "start" "opbb-server.js"
 14 error node v4.4.5
 15 error npm  v2.15.5
-16 error file sh
-17 error code ELIFECYCLE
-18 error errno ENOENT
-19 error syscall spawn
-20 error opbb@0.0.1 start: `nodejs ./bin/www "opbb-server.js"`
-20 error spawn ENOENT
-21 error Failed at the opbb@0.0.1 start script 'nodejs ./bin/www "opbb-server.js"'.
-21 error This is most likely a problem with the opbb package,
-21 error not with npm itself.
-21 error Tell the author that this fails on your system:
-21 error     nodejs ./bin/www "opbb-server.js"
-21 error You can get information on how to open an issue for this project with:
-21 error     npm bugs opbb
-21 error Or if that isn't available, you can get their info via:
-21 error
-21 error     npm owner ls opbb
-21 error There is likely additional logging output above.
-22 verbose exit [ 1, true ]
+16 error code ELIFECYCLE
+17 error opbb@0.0.1 start: `node ./bin/www "opbb-server.js"`
+17 error Exit status 1
+18 error Failed at the opbb@0.0.1 start script 'node ./bin/www "opbb-server.js"'.
+18 error This is most likely a problem with the opbb package,
+18 error not with npm itself.
+18 error Tell the author that this fails on your system:
+18 error     node ./bin/www "opbb-server.js"
+18 error You can get information on how to open an issue for this project with:
+18 error     npm bugs opbb
+18 error Or if that isn't available, you can get their info via:
+18 error
+18 error     npm owner ls opbb
+18 error There is likely additional logging output above.
+19 verbose exit [ 1, true ]
