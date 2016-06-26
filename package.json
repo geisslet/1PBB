@@ -1,22 +1,17 @@
 {
-  "name": "git",
-  "version": "1.0.0",
-  "description": "one person business billing",
-  "main": "opbb-server.js",
+  "name": "opbb",
+  "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/geisslet/1PBB.git"
-  },
-  "author": "geisslet",
-  "license": "GPL-3.0",
-  "bugs": {
-    "url": "https://github.com/geisslet/1PBB/issues"
-  },
-  "homepage": "https://github.com/geisslet/1PBB#readme",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "~4.0.0",
+    "static-favicon": "~1.0.0",
+    "morgan": "~1.0.0",
+    "cookie-parser": "~1.0.1",
+    "body-parser": "~1.0.0",
+    "debug": "~0.7.4",
+    "jade": "~1.3.0"
   }
 }
