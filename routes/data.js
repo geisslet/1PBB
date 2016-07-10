@@ -35,13 +35,23 @@ var reader = function _readFile (fileName, res) {
         
             if (err) res.send(err);//throw err;
 
-            csv.parse(data, {columns: true, delimiter: ';'}, (err, csvdata)=>{
-                if (err) res.send(err);//throw err;
+            if (fileName.endsWith("json")){
 
-                products = csvdata;
-                res.send(csvdata);
+                process.stdout.write(data);
 
-            });
+                products = data;
+                res.send(data);
+
+            } else {
+
+                csv.parse(data, {columns: true, delimiter: ';'}, (err, csvdata)=>{
+                    if (err) res.send(err);//throw err;
+
+                    products = csvdata;
+                    res.send(csvdata);
+
+                });
+            }
         });
 
     } catch (err) {
@@ -101,7 +111,8 @@ router.post('/products', function (req, res) {
 });
 
 // customers file ----------------------------------------------------
-var customersFile = '/../data/customers.csv';
+//var customersFile = '/../data/customers.csv';
+var customersFile = '/../data/customers.json';
 router.get('/customers', function (req, res) {
   process.stdout.write('get.customers: ' + req +'\n');
   reader(customersFile, res);

@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"l",
+				"label	Tag"
+			],
+			[
+				"sr",
+				"stringify"
+			],
+			[
+				"re",
+				"response"
+			],
+			[
+				"cos",
+				"customersFile"
+			],
+			[
+				"prod",
+				"prodFile"
+			],
+			[
+				"cosn",
+				"console"
+			],
+			[
 				"_",
 				"_readFile"
 			],
@@ -14,10 +38,6 @@
 			[
 				"ng-in",
 				"ng-init	AngularJS"
-			],
-			[
-				"re",
-				"reject"
 			],
 			[
 				"ale",
@@ -58,10 +78,6 @@
 			[
 				"pr",
 				"products"
-			],
-			[
-				"cos",
-				"console"
 			],
 			[
 				"va",
@@ -176,66 +192,61 @@
 	"buffers":
 	[
 		{
-			"file": "1pbb/public/javascripts/products/ProductsCtrl.js",
+			"contents": "# One Person Business Billing\n\ncreate an manage bills/articles for small businesses\n\n<h1>This is still in dev. Nothing works. Checkin are  just done for desaster recovery. U need to wait until summer 2016 for alpha/beta version.</h1>\n\n\n\nGenerell\n* TrackingId für Angebot und Auftrag: A-<MMYY>-<4xInteger (3er Schritt)>-<Y of existance> Y of existance in 2016 = 9\n* TrackingId für Rechnung und Lieferschein: R-<MMYY>-<4xInteger (10er Schritt)>-<Y of existance> \n* Customer: <MM/YY>-<4xInteger (1er Schritt)>\n* JSON\n\nKunde (~1000):\n* keine Tabelle 	[ok]\n* filter field     	[ok]\n* löschen button 	[ok]\n* erst bei safe schreibt der Server \n* refresh verwirft ändeungen (warnung)\n* notizfeld für größe (kommt automatisch zum werkstattzettel)\n\nArtikel\n* mit Bild\n\nAblauf: Angebot (email/Bief) > Auftrag > Auftragsbestätigung (orignal oder modifiziert > Rechnung & Lieferschein (content und reine Menge) 						   \n\nAngebot:\n\nalte angucken / löschen\n\nneu anlegen:\n1. select customer (adresse / email )\n2. select product + variation + amount + hidden production mark field\n3. print / sent by mail (check)\nErfolg Flag\n\nAuftrag:\n* übernahme angebot\n* Anpassung\n* offen|inArbeit|erledigt > Rechungsdruck/eMail\n\nGernerierung des Auftragszettel\n* offene und in Arbeit\n\n",
+			"file": "README.md",
+			"file_size": 1243,
+			"file_write_time": 131126510669063687,
 			"settings":
 			{
-				"buffer_size": 1217,
+				"buffer_size": 1256,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "1pbb/routes/data.js",
+			"file": "public/javascripts/DataApi.js",
 			"settings":
 			{
-				"buffer_size": 3709,
+				"buffer_size": 2288,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "1pbb/public/default.html",
+			"file": "routes/data.js",
 			"settings":
 			{
-				"buffer_size": 4051,
+				"buffer_size": 4361,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "1pbb/public/javascripts/products/ProductsPartial.html",
+			"file": "data/customers.csv",
 			"settings":
 			{
-				"buffer_size": 489,
+				"buffer_size": 1623,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "1pbb/public/javascripts/customers/CustomersPartial.html",
+			"file": "data/customers.json",
 			"settings":
 			{
-				"buffer_size": 502,
+				"buffer_size": 1687,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "1pbb/public/javascripts/customers/CustomersCtrl.js",
+			"file": "public/javascripts/customers/CustomersPartial.html",
 			"settings":
 			{
-				"buffer_size": 689,
+				"buffer_size": 743,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "1pbb/public/javascripts/DataApi.js",
+			"file": "public/javascripts/customers/CustomersCtrl.js",
 			"settings":
 			{
-				"buffer_size": 1499,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "1pbb/public/javascripts/settings/SettingsService.js",
-			"settings":
-			{
-				"buffer_size": 707,
+				"buffer_size": 840,
 				"line_ending": "Unix"
 			}
 		}
@@ -247,10 +258,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 392.0,
-		"last_filter": "pack",
+		"height": 341.0,
+		"last_filter": "prett",
 		"selected_items":
 		[
+			[
+				"prett",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
 			[
 				"pack",
 				"Package Control: Install Package"
@@ -289,38 +304,41 @@
 	},
 	"expanded_folders":
 	[
-		"/home/geisslet/git/1pbb",
-		"/home/geisslet/git/1pbb/public",
-		"/home/geisslet/git/1pbb/public/javascripts",
-		"/home/geisslet/git/1pbb/public/javascripts/customers",
-		"/home/geisslet/git/1pbb/public/javascripts/home",
-		"/home/geisslet/git/1pbb/public/javascripts/products",
-		"/home/geisslet/git/1pbb/public/javascripts/settings",
-		"/home/geisslet/git/1pbb/public/javascripts/statistics",
-		"/home/geisslet/git/1pbb/public/stylesheets",
-		"/home/geisslet/git/1pbb/routes"
+		"/home/geisslet/git",
+		"/home/geisslet/git/data",
+		"/home/geisslet/git/public",
+		"/home/geisslet/git/public/javascripts",
+		"/home/geisslet/git/public/javascripts/customers",
+		"/home/geisslet/git/routes"
 	],
 	"file_history":
 	[
+		"/home/geisslet/git/run.sh",
+		"/home/geisslet/git/public/javascripts/opbb-app.js",
+		"/home/geisslet/git/1pbb.sublime-project",
+		"/home/geisslet/git/1pbb.sublime-workspace",
+		"/home/geisslet/git/1pbb/public/javascripts/opbb-app.js",
+		"/home/geisslet/git/1pbb/public/javascripts/settings/SettingsService.js",
+		"/home/geisslet/git/1pbb/public/javascripts/DataApi.js",
+		"/home/geisslet/git/1pbb/public/default.html",
+		"/home/geisslet/git/1pbb/data/products.csv",
+		"/home/geisslet/git/1pbb/opbb-server.js",
+		"/home/geisslet/git/1pbb/routes/data.js",
+		"/home/geisslet/git/1pbb/public/javascripts/products/ProductsCtrl.js",
+		"/home/geisslet/git/1pbb/public/javascripts/products/ProductsPartial.html",
+		"/home/geisslet/git/1pbb/public/javascripts/customers/CustomersPartial.html",
+		"/home/geisslet/git/1pbb/public/javascripts/customers/CustomersCtrl.js",
 		"/home/geisslet/.config/sublime-text-3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
 		"/home/geisslet/.config/sublime-text-3/Packages/Babel/Babel.sublime-settings",
-		"/home/geisslet/git/1pbb/routes/data.js",
-		"/home/geisslet/git/1pbb/public/default.html",
 		"/home/geisslet/git/1pbb/public/javascripts/opbb-ctrl.js",
 		"/home/geisslet/git/1pbb/public/javascripts/home/HomePartial.html",
 		"/home/geisslet/git/1pbb/public/stylesheets/style.css",
-		"/home/geisslet/git/1pbb/public/javascripts/customers/CustomersCtrl.js",
-		"/home/geisslet/git/1pbb/public/javascripts/settings/SettingsService.js",
 		"/home/geisslet/git/1pbb/public/javascripts/opbb-config.js",
-		"/home/geisslet/git/1pbb/public/javascripts/opbb-app.js",
-		"/home/geisslet/git/1pbb/public/javascripts/customers/CustomersPartial.html",
 		"/home/geisslet/git/1pbb/data/customers.csv",
 		"/home/geisslet/git/1pbb/data/variations.csv",
 		"/home/geisslet/git/1pbb/public/javascripts/articles/ProductsCtrl.js",
 		"/home/geisslet/git/1pbb/public/javascripts/articles/ProductsPartial.html",
-		"/home/geisslet/git/1pbb/public/javascripts/products/ProductsPartial.html",
 		"/home/geisslet/git/1pbb/routes/users.js",
-		"/home/geisslet/git/1pbb/opbb-server.js",
 		"/home/geisslet/git/1pbb/data/orders_2015_positions.csv",
 		"/home/geisslet/git/1pbb/data/offers_2015.csv",
 		"/home/geisslet/git/1pbb/data/order_2015.csv",
@@ -332,7 +350,6 @@
 		"/home/geisslet/git/1pbb/routes/index.js",
 		"/home/geisslet/git/1pbb/package.json",
 		"/home/geisslet/git/1pbb/npm-debug.log",
-		"/home/geisslet/git/1pbb/data/products.csv",
 		"/home/geisslet/git/1pbb/data/user.csv",
 		"/home/geisslet/git/1pbb/views/layout.jade",
 		"/home/geisslet/git/1pbb/views/index.jade",
@@ -353,8 +370,6 @@
 		"/home/geisslet/git/1pbb/bin/www",
 		"/home/geisslet/quappe-git/client/web/app/features/quappe.statement.detail.ctrl.js",
 		"/home/geisslet/quappe-git/client/web/app/features/quappe.browse.ctrl.js",
-		"/home/geisslet/git/1pbb.sublime-workspace",
-		"/home/geisslet/git/1pbb.sublime-project",
 		"/home/geisslet/quappe-git/client/web/app/style/quappe-style.css",
 		"/home/geisslet/quappe-git/client/web/app/services/quappe.api.js",
 		"/home/geisslet/quappe-git/client/web/app/index.html",
@@ -428,141 +443,24 @@
 			[
 				{
 					"buffer": 0,
-					"file": "1pbb/public/javascripts/products/ProductsCtrl.js",
+					"file": "README.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1217,
+						"buffer_size": 1256,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								382,
-								382
+								598,
+								598
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "1pbb/routes/data.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3709,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2,
-								2
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "1pbb/public/default.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4051,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4006,
-								4006
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 476.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "1pbb/public/javascripts/products/ProductsPartial.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 489,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								107,
-								107
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "1pbb/public/javascripts/customers/CustomersPartial.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 502,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								312,
-								312
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -572,26 +470,84 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "1pbb/public/javascripts/customers/CustomersCtrl.js",
+					"buffer": 1,
+					"file": "public/javascripts/DataApi.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 689,
+						"buffer_size": 2288,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								545,
-								545
+								1016,
+								1016
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
 							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1073.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "routes/data.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4361,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								816,
+								816
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 427.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "data/customers.csv",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1623,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								67,
+								67
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -601,49 +557,76 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "1pbb/public/javascripts/DataApi.js",
+					"buffer": 4,
+					"file": "data/customers.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1499,
+						"buffer_size": 1687,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1158,
-								1158
+								724,
+								724
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 182.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "public/javascripts/customers/CustomersPartial.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 743,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								524,
+								524
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "1pbb/public/javascripts/settings/SettingsService.js",
+					"buffer": 6,
+					"file": "public/javascripts/customers/CustomersCtrl.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 707,
+						"buffer_size": 840,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								338,
-								338
+								455,
+								459
 							]
 						],
 						"settings":
@@ -652,10 +635,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 173.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -738,7 +721,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 283.0,
+	"side_bar_width": 282.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

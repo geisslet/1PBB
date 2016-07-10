@@ -1,0 +1,254 @@
+
+> opbb@0.0.1 start /home/geisslet/git
+> node ./bin/www "opbb-server.js"
+
+[90mGET / [32m200 [90m101ms - 3.96kb[0m
+[90mGET /bower_components/angular-route/angular-route.min.js [32m200 [90m166ms - 4.45kb[0m
+[90mGET /bower_components/angular-strap/dist/angular-strap.tpl.min.js [32m200 [90m175ms - 8.99kb[0m
+[90mGET /bower_components/ng-dialog/js/ngDialog.min.js [32m200 [90m164ms - 11.58kb[0m
+[90mGET /bower_components/angular-strap/dist/angular-strap.min.js [32m200 [90m177ms - 77.04kb[0m
+[90mGET /bower_components/angular/angular.min.js [32m200 [90m227ms - 154.22kb[0m
+[90mGET /bower_components/angular-ui-grid/ui-grid.min.js [32m200 [90m230ms - 297.07kb[0m
+[90mGET /bower_components/angular-translate/angular-translate.min.js [32m200 [90m98ms - 57.19kb[0m
+[90mGET /javascripts/opbb-app.js [32m200 [90m88ms - 1.07kb[0m
+[90mGET /javascripts/opbb-config.js [32m200 [90m89ms - 1.18kb[0m
+[90mGET /javascripts/settings/SettingsService.js [32m200 [90m100ms - 707b[0m
+[90mGET /javascripts/DataApi.js [32m200 [90m80ms - 2.23kb[0m
+[90mGET /javascripts/opbb-ctrl.js [32m200 [90m79ms - 542b[0m
+[90mGET /javascripts/bills/BillsCtrl.js [32m200 [90m12ms - 141b[0m
+[90mGET /javascripts/customers/CustomersCtrl.js [32m200 [90m5ms - 689b[0m
+[90mGET /javascripts/offers/OffersCtrl.js [32m200 [90m2ms - 145b[0m
+[90mGET /javascripts/products/ProductsCtrl.js [32m200 [90m5ms - 1.31kb[0m
+[90mGET /javascripts/statistics/StatisticsCtrl.js [32m200 [90m25ms - 161b[0m
+[90mGET /bower_components/bootstrap/dist/css/bootstrap.min.css [32m200 [90m39ms - 118.42kb[0m
+[90mGET /bower_components/font-awesome/css/font-awesome.min.css [32m200 [90m49ms - 28.25kb[0m
+[90mGET /bower_components/ng-dialog/css/ngDialog.min.css [32m200 [90m41ms - 1.44kb[0m
+[90mGET /bower_components/ng-dialog/css/ngDialog-theme-default.min.css [32m200 [90m36ms - 3.48kb[0m
+[90mGET /bower_components/angular-ui-grid/ui-grid.css [32m200 [90m21ms - 52.48kb[0m
+[90mGET /stylesheets/style.css [32m200 [90m13ms - 302b[0m
+[90mGET /javascripts/home/HomePartial.html [32m200 [90m2ms - 1.1kb[0m
+[90mGET /images/happyCustomer.png [32m200 [90m35ms - 3.01kb[0m
+[90mGET /images/statistics.png [32m200 [90m28ms - 3.77kb[0m
+[90mGET /images/product.png [32m200 [90m36ms - 3.96kb[0m
+[90mGET /images/bill23round.png [32m200 [90m31ms - 3.31kb[0m
+[90mGET /images/greenPencil.png [32m200 [90m32ms - 6.57kb[0m
+[90mGET /default.html [32m200 [90m1ms - 3.96kb[0m
+[90mGET /bower_components/angular/angular.min.js [36m304 [90m2ms[0m
+[90mGET /bower_components/angular-route/angular-route.min.js [36m304 [90m1ms[0m
+[90mGET /bower_components/angular-strap/dist/angular-strap.min.js [36m304 [90m0ms[0m
+[90mGET /bower_components/angular-strap/dist/angular-strap.tpl.min.js [36m304 [90m0ms[0m
+[90mGET /bower_components/angular-ui-grid/ui-grid.min.js [36m304 [90m0ms[0m
+[90mGET /bower_components/ng-dialog/js/ngDialog.min.js [36m304 [90m3ms[0m
+[90mGET /bower_components/angular-translate/angular-translate.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/opbb-app.js [36m304 [90m1ms[0m
+[90mGET /javascripts/opbb-config.js [36m304 [90m4ms[0m
+[90mGET /javascripts/opbb-ctrl.js [36m304 [90m4ms[0m
+[90mGET /javascripts/settings/SettingsService.js [36m304 [90m3ms[0m
+[90mGET /javascripts/DataApi.js [36m304 [90m3ms[0m
+[90mGET /javascripts/customers/CustomersCtrl.js [36m304 [90m5ms[0m
+[90mGET /javascripts/bills/BillsCtrl.js [36m304 [90m4ms[0m
+[90mGET /javascripts/products/ProductsCtrl.js [36m304 [90m6ms[0m
+[90mGET /javascripts/offers/OffersCtrl.js [36m304 [90m1ms[0m
+[90mGET /javascripts/statistics/StatisticsCtrl.js [36m304 [90m5ms[0m
+[90mGET /bower_components/bootstrap/dist/css/bootstrap.min.css [36m304 [90m7ms[0m
+[90mGET /bower_components/font-awesome/css/font-awesome.min.css [36m304 [90m5ms[0m
+[90mGET /bower_components/ng-dialog/css/ngDialog.min.css [36m304 [90m1ms[0m
+[90mGET /bower_components/ng-dialog/css/ngDialog-theme-default.min.css [36m304 [90m8ms[0m
+[90mGET /bower_components/angular-ui-grid/ui-grid.css [36m304 [90m0ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m0ms[0m
+[90mGET /javascripts/customers/CustomersPartial.html [32m200 [90m30ms - 502b[0m
+get.customers: [object Object]
+read File: /home/geisslet/git/routes/../data/customers.csv
+[90mGET /data/customers [36m304 [90m164ms[0m
+[90mGET /default.html [36m304 [90m0ms[0m
+[90mGET /bower_components/angular/angular.min.js [36m304 [90m1ms[0m
+[90mGET /bower_components/angular-route/angular-route.min.js [36m304 [90m0ms[0m
+[90mGET /bower_components/angular-strap/dist/angular-strap.min.js [36m304 [90m0ms[0m
+[90mGET /bower_components/angular-strap/dist/angular-strap.tpl.min.js [36m304 [90m0ms[0m
+[90mGET /bower_components/angular-ui-grid/ui-grid.min.js [36m304 [90m1ms[0m
+[90mGET /bower_components/angular-translate/angular-translate.min.js [36m304 [90m8ms[0m
+[90mGET /bower_components/ng-dialog/js/ngDialog.min.js [36m304 [90m8ms[0m
+[90mGET /javascripts/opbb-app.js [36m304 [90m17ms[0m
+[90mGET /javascripts/opbb-config.js [36m304 [90m16ms[0m
+[90mGET /javascripts/settings/SettingsService.js [36m304 [90m12ms[0m
+[90mGET /javascripts/DataApi.js [36m304 [90m1ms[0m
+[90mGET /javascripts/opbb-ctrl.js [36m304 [90m0ms[0m
+[90mGET /javascripts/bills/BillsCtrl.js [36m304 [90m1ms[0m
+[90mGET /javascripts/customers/CustomersCtrl.js [36m304 [90m1ms[0m
+[90mGET /javascripts/offers/OffersCtrl.js [36m304 [90m1ms[0m
+[90mGET /javascripts/products/ProductsCtrl.js [36m304 [90m6ms[0m
+[90mGET /javascripts/statistics/StatisticsCtrl.js [36m304 [90m1ms[0m
+[90mGET /bower_components/bootstrap/dist/css/bootstrap.min.css [36m304 [90m1ms[0m
+[90mGET /bower_components/font-awesome/css/font-awesome.min.css [36m304 [90m1ms[0m
+[90mGET /bower_components/ng-dialog/css/ngDialog.min.css [36m304 [90m1ms[0m
+[90mGET /bower_components/ng-dialog/css/ngDialog-theme-default.min.css [36m304 [90m0ms[0m
+[90mGET /bower_components/angular-ui-grid/ui-grid.css [36m304 [90m1ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m3ms[0m
+[90mGET /javascripts/customers/CustomersPartial.html [32m200 [90m3ms - 539b[0m
+get.customers: [object Object]
+read File: /home/geisslet/git/routes/../data/customers.csv
+[90mGET /data/customers [36m304 [90m51ms[0m
+[90mGET /default.html [36m304 [90m1ms[0m
+[90mGET /bower_components/angular/angular.min.js [36m304 [90m2ms[0m
+[90mGET /bower_components/angular-route/angular-route.min.js [36m304 [90m1ms[0m
+[90mGET /bower_components/angular-strap/dist/angular-strap.min.js [36m304 [90m0ms[0m
+[90mGET /bower_components/angular-strap/dist/angular-strap.tpl.min.js [36m304 [90m0ms[0m
+[90mGET /bower_components/angular-ui-grid/ui-grid.min.js [36m304 [90m1ms[0m
+[90mGET /bower_components/ng-dialog/js/ngDialog.min.js [36m304 [90m15ms[0m
+[90mGET /bower_components/angular-translate/angular-translate.min.js [36m304 [90m2ms[0m
+[90mGET /javascripts/opbb-app.js [36m304 [90m2ms[0m
+[90mGET /javascripts/opbb-config.js [36m304 [90m0ms[0m
+[90mGET /javascripts/settings/SettingsService.js [36m304 [90m3ms[0m
+[90mGET /javascripts/DataApi.js [36m304 [90m3ms[0m
+[90mGET /javascripts/opbb-ctrl.js [36m304 [90m3ms[0m
+[90mGET /javascripts/bills/BillsCtrl.js [36m304 [90m2ms[0m
+[90mGET /javascripts/customers/CustomersCtrl.js [36m304 [90m4ms[0m
+[90mGET /javascripts/offers/OffersCtrl.js [36m304 [90m0ms[0m
+[90mGET /javascripts/products/ProductsCtrl.js [36m304 [90m0ms[0m
+[90mGET /javascripts/statistics/StatisticsCtrl.js [36m304 [90m0ms[0m
+[90mGET /bower_components/bootstrap/dist/css/bootstrap.min.css [36m304 [90m0ms[0m
+[90mGET /bower_components/font-awesome/css/font-awesome.min.css [36m304 [90m0ms[0m
+[90mGET /bower_components/ng-dialog/css/ngDialog.min.css [36m304 [90m3ms[0m
+[90mGET /bower_components/ng-dialog/css/ngDialog-theme-default.min.css [36m304 [90m3ms[0m
+[90mGET /bower_components/angular-ui-grid/ui-grid.css [36m304 [90m2ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/customers/CustomersPartial.html [32m200 [90m1ms - 538b[0m
+get.customers: [object Object]
+read File: /home/geisslet/git/routes/../data/customers.csv
+[90mGET /data/customers [36m304 [90m98ms[0m
+[90mGET /default.html [36m304 [90m1ms[0m
+[90mGET /bower_components/angular/angular.min.js [36m304 [90m0ms[0m
+[90mGET /bower_components/angular-route/angular-route.min.js [36m304 [90m1ms[0m
+[90mGET /bower_components/angular-strap/dist/angular-strap.min.js [36m304 [90m0ms[0m
+[90mGET /bower_components/angular-strap/dist/angular-strap.tpl.min.js [36m304 [90m1ms[0m
+[90mGET /bower_components/angular-ui-grid/ui-grid.min.js [36m304 [90m5ms[0m
+[90mGET /bower_components/ng-dialog/js/ngDialog.min.js [36m304 [90m4ms[0m
+[90mGET /bower_components/angular-translate/angular-translate.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/opbb-app.js [36m304 [90m0ms[0m
+[90mGET /javascripts/opbb-config.js [36m304 [90m4ms[0m
+[90mGET /javascripts/settings/SettingsService.js [36m304 [90m6ms[0m
+[90mGET /javascripts/DataApi.js [36m304 [90m6ms[0m
+[90mGET /javascripts/opbb-ctrl.js [36m304 [90m6ms[0m
+[90mGET /javascripts/bills/BillsCtrl.js [36m304 [90m7ms[0m
+[90mGET /javascripts/customers/CustomersCtrl.js [36m304 [90m1ms[0m
+[90mGET /javascripts/offers/OffersCtrl.js [36m304 [90m2ms[0m
+[90mGET /javascripts/products/ProductsCtrl.js [36m304 [90m7ms[0m
+[90mGET /javascripts/statistics/StatisticsCtrl.js [36m304 [90m6ms[0m
+[90mGET /bower_components/bootstrap/dist/css/bootstrap.min.css [36m304 [90m3ms[0m
+[90mGET /bower_components/font-awesome/css/font-awesome.min.css [36m304 [90m4ms[0m
+[90mGET /bower_components/ng-dialog/css/ngDialog.min.css [36m304 [90m13ms[0m
+[90mGET /bower_components/ng-dialog/css/ngDialog-theme-default.min.css [36m304 [90m8ms[0m
+[90mGET /bower_components/angular-ui-grid/ui-grid.css [36m304 [90m10ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m24ms[0m
+[90mGET /javascripts/customers/CustomersPartial.html [32m200 [90m2ms - 558b[0m
+get.customers: [object Object]
+read File: /home/geisslet/git/routes/../data/customers.csv
+[90mGET /data/customers [36m304 [90m19ms[0m
+[90mGET /default.html [36m304 [90m1ms[0m
+[90mGET /bower_components/angular/angular.min.js [36m304 [90m1ms[0m
+[90mGET /bower_components/angular-route/angular-route.min.js [36m304 [90m7ms[0m
+[90mGET /bower_components/angular-strap/dist/angular-strap.min.js [36m304 [90m0ms[0m
+[90mGET /bower_components/angular-strap/dist/angular-strap.tpl.min.js [36m304 [90m0ms[0m
+[90mGET /bower_components/angular-ui-grid/ui-grid.min.js [36m304 [90m1ms[0m
+[90mGET /bower_components/ng-dialog/js/ngDialog.min.js [36m304 [90m0ms[0m
+[90mGET /bower_components/angular-translate/angular-translate.min.js [36m304 [90m0ms[0m
+[90mGET /javascripts/opbb-app.js [36m304 [90m1ms[0m
+[90mGET /javascripts/opbb-config.js [36m304 [90m0ms[0m
+[90mGET /javascripts/settings/SettingsService.js [36m304 [90m2ms[0m
+[90mGET /javascripts/DataApi.js [36m304 [90m1ms[0m
+[90mGET /javascripts/opbb-ctrl.js [36m304 [90m1ms[0m
+[90mGET /javascripts/bills/BillsCtrl.js [36m304 [90m0ms[0m
+[90mGET /javascripts/customers/CustomersCtrl.js [36m304 [90m1ms[0m
+[90mGET /javascripts/offers/OffersCtrl.js [36m304 [90m1ms[0m
+[90mGET /javascripts/products/ProductsCtrl.js [36m304 [90m4ms[0m
+[90mGET /javascripts/statistics/StatisticsCtrl.js [36m304 [90m0ms[0m
+[90mGET /bower_components/bootstrap/dist/css/bootstrap.min.css [36m304 [90m1ms[0m
+[90mGET /bower_components/font-awesome/css/font-awesome.min.css [36m304 [90m1ms[0m
+[90mGET /bower_components/ng-dialog/css/ngDialog.min.css [36m304 [90m1ms[0m
+[90mGET /bower_components/ng-dialog/css/ngDialog-theme-default.min.css [36m304 [90m0ms[0m
+[90mGET /bower_components/angular-ui-grid/ui-grid.css [36m304 [90m1ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/customers/CustomersPartial.html [32m200 [90m1ms - 628b[0m
+get.customers: [object Object]
+read File: /home/geisslet/git/routes/../data/customers.csv
+[90mGET /data/customers [36m304 [90m51ms[0m
+[90mGET /default.html [36m304 [90m0ms[0m
+[90mGET /bower_components/angular/angular.min.js [36m304 [90m0ms[0m
+[90mGET /bower_components/angular-route/angular-route.min.js [36m304 [90m1ms[0m
+[90mGET /bower_components/angular-strap/dist/angular-strap.min.js [36m304 [90m1ms[0m
+[90mGET /bower_components/angular-strap/dist/angular-strap.tpl.min.js [36m304 [90m1ms[0m
+[90mGET /bower_components/angular-ui-grid/ui-grid.min.js [36m304 [90m2ms[0m
+[90mGET /bower_components/ng-dialog/js/ngDialog.min.js [36m304 [90m6ms[0m
+[90mGET /bower_components/angular-translate/angular-translate.min.js [36m304 [90m7ms[0m
+[90mGET /javascripts/opbb-app.js [36m304 [90m7ms[0m
+[90mGET /javascripts/opbb-config.js [36m304 [90m1ms[0m
+[90mGET /javascripts/settings/SettingsService.js [36m304 [90m1ms[0m
+[90mGET /javascripts/DataApi.js [36m304 [90m1ms[0m
+[90mGET /javascripts/opbb-ctrl.js [36m304 [90m3ms[0m
+[90mGET /javascripts/bills/BillsCtrl.js [36m304 [90m2ms[0m
+[90mGET /javascripts/customers/CustomersCtrl.js [36m304 [90m2ms[0m
+[90mGET /javascripts/offers/OffersCtrl.js [36m304 [90m2ms[0m
+[90mGET /javascripts/products/ProductsCtrl.js [36m304 [90m4ms[0m
+[90mGET /javascripts/statistics/StatisticsCtrl.js [36m304 [90m5ms[0m
+[90mGET /bower_components/bootstrap/dist/css/bootstrap.min.css [36m304 [90m5ms[0m
+[90mGET /bower_components/font-awesome/css/font-awesome.min.css [36m304 [90m4ms[0m
+[90mGET /bower_components/ng-dialog/css/ngDialog.min.css [36m304 [90m0ms[0m
+[90mGET /bower_components/ng-dialog/css/ngDialog-theme-default.min.css [36m304 [90m0ms[0m
+[90mGET /bower_components/angular-ui-grid/ui-grid.css [36m304 [90m1ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m1ms[0m
+[90mGET /javascripts/customers/CustomersPartial.html [32m200 [90m1ms - 628b[0m
+get.customers: [object Object]
+read File: /home/geisslet/git/routes/../data/customers.csv
+[90mGET /data/customers [36m304 [90m10ms[0m
+[90mGET /default.html [36m304 [90m0ms[0m
+[90mGET /bower_components/angular/angular.min.js [36m304 [90m1ms[0m
+[90mGET /bower_components/angular-route/angular-route.min.js [36m304 [90m3ms[0m
+[90mGET /bower_components/angular-strap/dist/angular-strap.min.js [36m304 [90m2ms[0m
+[90mGET /bower_components/angular-strap/dist/angular-strap.tpl.min.js [36m304 [90m1ms[0m
+[90mGET /bower_components/angular-ui-grid/ui-grid.min.js [36m304 [90m2ms[0m
+[90mGET /bower_components/ng-dialog/js/ngDialog.min.js [36m304 [90m1ms[0m
+[90mGET /bower_components/angular-translate/angular-translate.min.js [36m304 [90m1ms[0m
+[90mGET /javascripts/opbb-app.js [36m304 [90m0ms[0m
+[90mGET /javascripts/opbb-config.js [36m304 [90m0ms[0m
+[90mGET /javascripts/settings/SettingsService.js [36m304 [90m0ms[0m
+[90mGET /javascripts/DataApi.js [36m304 [90m1ms[0m
+[90mGET /javascripts/opbb-ctrl.js [36m304 [90m1ms[0m
+[90mGET /javascripts/bills/BillsCtrl.js [36m304 [90m3ms[0m
+[90mGET /javascripts/customers/CustomersCtrl.js [32m200 [90m3ms - 840b[0m
+[90mGET /javascripts/offers/OffersCtrl.js [36m304 [90m12ms[0m
+[90mGET /javascripts/products/ProductsCtrl.js [36m304 [90m1ms[0m
+[90mGET /javascripts/statistics/StatisticsCtrl.js [36m304 [90m1ms[0m
+[90mGET /bower_components/bootstrap/dist/css/bootstrap.min.css [36m304 [90m1ms[0m
+[90mGET /bower_components/font-awesome/css/font-awesome.min.css [36m304 [90m1ms[0m
+[90mGET /bower_components/ng-dialog/css/ngDialog.min.css [36m304 [90m0ms[0m
+[90mGET /bower_components/ng-dialog/css/ngDialog-theme-default.min.css [36m304 [90m1ms[0m
+[90mGET /bower_components/angular-ui-grid/ui-grid.css [36m304 [90m0ms[0m
+[90mGET /stylesheets/style.css [36m304 [90m0ms[0m
+[90mGET /javascripts/customers/CustomersPartial.html [32m200 [90m1ms - 740b[0m
+get.customers: [object Object]
+read File: /home/geisslet/git/routes/../data/customers.csv
+[90mGET /data/customers [36m304 [90m74ms[0m
+Killed
+
+npm ERR! Linux 4.4.0-22-generic
+npm ERR! argv "/usr/bin/nodejs" "/usr/bin/npm" "start" "opbb-server.js"
+npm ERR! node v5.11.0
+npm ERR! npm  v3.8.6
+npm ERR! code ELIFECYCLE
+npm ERR! opbb@0.0.1 start: `node ./bin/www "opbb-server.js"`
+npm ERR! Exit status 137
+npm ERR! 
+npm ERR! Failed at the opbb@0.0.1 start script 'node ./bin/www "opbb-server.js"'.
+npm ERR! Make sure you have the latest version of node.js and npm installed.
+npm ERR! If you do, this is most likely a problem with the opbb package,
+npm ERR! not with npm itself.
+npm ERR! Tell the author that this fails on your system:
+npm ERR!     node ./bin/www "opbb-server.js"
+npm ERR! You can get information on how to open an issue for this project with:
+npm ERR!     npm bugs opbb
+npm ERR! Or if that isn't available, you can get their info via:
+npm ERR!     npm owner ls opbb
+npm ERR! There is likely additional logging output above.
+
+npm ERR! Please include the following file with any support request:
+npm ERR!     /home/geisslet/git/npm-debug.log

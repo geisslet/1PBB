@@ -1,2 +1,3 @@
 DEBUG=1pbb:* 
-nohub npm start opbb-server.js &
+#nohup npm start opbb-server.js &
+npm start opbb-server.js

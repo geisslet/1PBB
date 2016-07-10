@@ -2,14 +2,18 @@
 
 	<h1>{{ 'CUSTOMERS' | translate }} </h1>
 
-	<button class="btn btn-default" ng-click="vm.activate()"><i class="fa fa-refresh"></i>Refresh</button>
-	<button class="btn btn-default" ng-click="vm.safe()"><i class="fa fa-floppy-o"></i>Save</button>
+	<button class="btn btn-default" ng-click="vm.activate()"><i class="fa fa-refresh"></i> Refresh</button>
+	<button class="btn btn-default" ng-click="vm.safe()"><i class="fa fa-floppy-o"></i> Save</button>
 	
-	<!-- | filter:q | startFrom:currentPage*pageSize | limitTo:pageSize -->
+
+	<label>Filter:</label><input ng-model=q></input>
+	<button class="btn btn-default" ng-click="vm.add"><i class="fa fa-plus-square"></i> Add</button>
+	<!--| startFrom:currentPage*pageSize | limitTo:pageSize -->
+	<hr>
 
 	<ul>
-        <li ng-repeat="item in vm.items ">
-            {{item}}
+        <li ng-repeat="item in vm.items | filter:q ">
+            {{item}} <button class="btn btn-default" ng-click="vm."><i class="fa fa-remove"></i></button>
           <hr>
         </li>
     </ul>

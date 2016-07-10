@@ -30,4 +30,12 @@ function CustomersCtrl ($log, DataApi){
 			});
 	};
 
+	vm.remove = function fRemove(id){
+		$log.debug('customer remove called: ' + id);
+	};
+
+	vm.add = function fAdd(){
+		$log.debug('customer added');
+	};
+
 }

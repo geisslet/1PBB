@@ -35,7 +35,7 @@ function DataApi ($log, $http, $q, SettingsService, ngDialog){
 				
 				$log.debug('DataApi.get ' + mode + ' success: length ' + response.data.length);
 				//$log.debug(JSON.stringify(response));
-				resolve(response);
+				resolve(response.data);
 
 			}, function fail(response) {
 				
